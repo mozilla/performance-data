@@ -1,0 +1,41 @@
+name: Update Android Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *' # Runs daily at 2 AM UTC
+
+jobs:
+  download_and_gzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Download JSON data file
+        id: download
+        run: |
+          wget -O android-data.json "https://sql.telemetry.mozilla.org/api/queries/103542/results.json?api_key=83yUK1sJn1LFwNuiL41aZLoPV5Wwh1tmtIhzEAkG"
+        continue-on-error: true
+
+      - name: Check if download succeeded
+        run: |
+          if [ ! -f android-data.json ]; then
+            echo "Download failed. Aborting to avoid overwriting previous data."
+            exit 1
+          fi
+
+      - name: Gzip
+        run: |
+          gzip -c android-data.json > android-data.json.gz
+          rm android-data.json
+
+      - name: Commit and push gzipped file if changed
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add android-data.json.gz
+          git diff --cached --quiet || git commit -m "Update android-data.json.gz"
+          git push
