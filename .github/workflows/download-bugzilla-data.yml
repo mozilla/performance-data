@@ -1,0 +1,59 @@
+name: Download and Merge Bugzilla Data
+
+on:
+  schedule:
+    - cron: '00 00 * * *'  # Runs every day at 12:00AM (midnight)
+  workflow_dispatch:
+
+jobs:
+  download-and-merge-bugzilla-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Download Bugzilla data (medium impact)
+      run: |
+        curl -o bugzilla-data-medium.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&bug_status=__open__&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f1=cf_performance_impact&limit=0&o1=equals&v1=medium"
+
+    - name: Download Bugzilla data (low impact)
+      run: |
+        curl -o bugzilla-data-low.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&bug_status=__open__&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f1=cf_performance_impact&limit=0&o1=equals&v1=low"
+
+    - name: Download Bugzilla data (high impact)
+      run: |
+        curl -o bugzilla-data-high.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&bug_status=__open__&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f1=cf_performance_impact&limit=0&o1=equals&v1=high"
+
+    - name: Download Bugzilla data (untriaged)
+      run: |
+        curl -o bugzilla-data-untriaged.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&f1=OP&f10=OP&f11=cf_performance_impact&f12=flagtypes.name&f13=CP&f2=cf_performance_impact&f3=CP&f4=OP&f5=product&f6=component&f7=keywords&f8=cf_performance_impact&f9=CP&j_top=OR&o11=equals&o12=notsubstring&o2=equals&o5=equals&o6=equals&o7=notsubstring&o8=isempty&resolution=---&v11=pending-needinfo&v12=needinfo&v2=%3F&v5=Core&v6=Performance&v7=meta"
+
+    - name: Download Bugzilla data (needinfo)
+      run: |
+        curl -o bugzilla-data-needinfo.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&bug_status=__open__&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f1=cf_performance_impact&limit=0&o1=equals&v1=pending-needinfo"
+
+    - name: Download Bugzilla data (regressions)
+      run: |
+        curl -o bugzilla-data-regressions.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f1=keywords&f2=keywords&o1=substring&o2=anywordssubstr&resolution=---&v1=regression&v2=perf-alert"
+
+
+    - name: Merge JSON files
+      run: |
+        jq -n '{high: $high[], medium: $medium[], low: $low[], untriaged: $untriaged[], needinfo: $needinfo[], regressions: $regressions[]}' \
+          --slurpfile high bugzilla-data-high.json \
+          --slurpfile medium bugzilla-data-medium.json \
+          --slurpfile low bugzilla-data-low.json \
+          --slurpfile untriaged bugzilla-data-untriaged.json \
+          --slurpfile needinfo bugzilla-data-needinfo.json \
+          --slurpfile regressions bugzilla-data-regressions.json > bugzilla-data-all.json
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add bugzilla-data-medium.json bugzilla-data-low.json bugzilla-data-high.json bugzilla-data-untriaged.json bugzilla-data-needinfo.json bugzilla-data-all.json bugzilla-data-regressions.json
+        git commit -m "Update Bugzilla data"
+        git push

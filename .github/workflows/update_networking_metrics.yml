@@ -1,0 +1,66 @@
+name: Update Networking metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 00 * * *'  # Runs daily at 12:15 AM
+
+jobs:
+  merge-json:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      with:
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Required Python Packages
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests pandas
+
+    - name: Download and Merge JSON Files
+      run: |
+        python <<EOF
+        import requests
+        import pandas as pd
+
+        urls = [
+            "https://sql.telemetry.mozilla.org/api/queries/102460/results.json?api_key=KEosvxWyFEbgQmYd2ppSc89Kig1t43zRwmQNzF03",
+            "https://sql.telemetry.mozilla.org/api/queries/102484/results.json?api_key=CLE7ocT9aw8Q9bcCufRH0oizs3ob4CmP858Z3Cds",
+            "https://sql.telemetry.mozilla.org/api/queries/102485/results.json?api_key=RCmKp0XiSnkyhhuqPXLK6TKxQKB3Y1qhVHdl1ADh"
+        ]
+
+        all_data = []
+        for url in urls:
+            response = requests.get(url)
+            data = response.json()
+            rows = data.get("query_result", {}).get("data", {}).get("rows", [])
+            all_data.extend(rows)
+
+        try:
+            with open('networking-metrics-data.json', 'r') as file:
+                existing_data = pd.read_json(file)
+                all_data.extend(existing_data.to_dict(orient='records'))
+        except FileNotFoundError:
+            raise FileNotFoundError("Error: 'networking-metrics-data.json' not found.")
+
+        df = pd.DataFrame(all_data)
+        df['date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
+        df = df.drop_duplicates(subset=['date', 'channel', 'os', 'metric'], keep='last')
+        df = df.sort_values(by='date')
+        df.to_json('networking-metrics-data.json', orient='records')
+        EOF
+
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add networking-metrics-data.json
+        git commit -m "Update networking-metrics-data.json with latest data"
+        git push
