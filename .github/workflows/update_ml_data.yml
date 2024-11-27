@@ -6,7 +6,7 @@ on:
     - cron: '10 2 * * *' # Runs daily at 2 AM UTC
 
 jobs:
-  download_and_gzip:
+  download:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
