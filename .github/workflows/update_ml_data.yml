@@ -1,4 +1,4 @@
-name: Update Android Data
+name: Update ML Data
 
 on:
   workflow_dispatch:
