@@ -1,0 +1,35 @@
+name: Update Android Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 2 * * *' # Runs daily at 2 AM UTC
+
+jobs:
+  download_and_gzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Download JSON data file
+        id: download
+        run: |
+          wget -O ml-data.json "https://sql.telemetry.mozilla.org/api/queries/104013/results.json?api_key=iIPEZvkm6jzp9eKGbnnEOgj7WmpIpkAvcVECq1aV"
+        continue-on-error: true
+
+      - name: Check if download succeeded
+        run: |
+          if [ ! -f ml-data.json ]; then
+            echo "Download failed. Aborting to avoid overwriting previous data."
+            exit 1
+          fi
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add ml-data.json
+          git diff --cached --quiet || git commit -m "Update ml-data.json"
+          git push
