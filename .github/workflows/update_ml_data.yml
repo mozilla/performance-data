@@ -6,7 +6,7 @@ on:
     - cron: '10 2 * * *' # Runs daily at 2 AM UTC
 
 jobs:
-  download-ml-perfherder-data:
+  download-ml-data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -15,7 +15,7 @@ jobs:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Download JSON data file
-        id: download
+        id: download-perfderder-data
         run: |
           wget -O ml-data.json "https://sql.telemetry.mozilla.org/api/queries/104013/results.json?api_key=iIPEZvkm6jzp9eKGbnnEOgj7WmpIpkAvcVECq1aV"
         continue-on-error: true
@@ -26,26 +26,11 @@ jobs:
             echo "Download failed. Aborting to avoid overwriting previous data."
             exit 1
           fi
-      - name: Commit and push if changed
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add ml-data.json
-          git diff --cached --quiet || git commit -m "Update ml-data.json"
-          git push
-
-  download-ml-feature-data:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Download JSON data file
-        id: download
+        id: download-engine-data
         run: |
-          wget -O ml-engine-data.json "https://sql.telemetry.mozilla.org/api/queries/106820/results.json?api_key=iIPEZvkm6jzp9eKGbnnEOgj7WmpIpkAvcVECq1aV"
+          wget -O ml-engine-data.json "https://sql.telemetry.mozilla.org/api/queries/106820/results.json?api_key=pHCFadcoRdAYypOMPoKJw1uaHL1lzzgRy0g7HUZJ"
         continue-on-error: true
 
       - name: Check if download succeeded
@@ -54,10 +39,13 @@ jobs:
             echo "Download failed. Aborting to avoid overwriting previous data."
             exit 1
           fi
+      
       - name: Commit and push if changed
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add ml-engine-data.json
-          git diff --cached --quiet || git commit -m "Update ml-engine-data.json"
+          git add ml-data.json ml-engine-data.json
+          git diff --cached --quiet || git commit -m "Update ml-data.json & ml-engine-data.json"
           git push
+
+
