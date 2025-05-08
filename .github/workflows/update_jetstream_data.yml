@@ -1,0 +1,41 @@
+name: Update Jetstream Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 */6 * * *' # Runs every 6 hours
+
+jobs:
+  download_and_gzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Download JSON data file
+        id: download
+        run: |
+          wget -O jetstream-data.json "https://sql.telemetry.mozilla.org/api/queries/107813/results.json?api_key=xJpzSw24l2M9j0ICRFdH9oCcgAWwtYRbpuosD5m8"
+        continue-on-error: true
+
+      - name: Check if download succeeded
+        run: |
+          if [ ! -f jetstream-data.json ]; then
+            echo "Download failed. Aborting to avoid overwriting previous data."
+            exit 1
+          fi
+
+      - name: Gzip
+        run: |
+          gzip -c jetstream-data.json > jetstream-data.json.gz
+          rm jetstream-data.json
+
+      - name: Commit and push gzipped file if changed
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add jetstream-data.json.gz
+          git diff --cached --quiet || git commit -m "Update jetstream-data.json.gz"
+          git push
