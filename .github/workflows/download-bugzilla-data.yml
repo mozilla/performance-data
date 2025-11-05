@@ -39,21 +39,45 @@ jobs:
       run: |
         curl -o bugzilla-data-regressions.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f1=keywords&f2=keywords&o1=substring&o2=anywordssubstr&resolution=---&v1=regression&v2=perf-alert"
 
+    - name: Download Bugzilla data (triage-general)
+      run: |
+        curl -o bugzilla-data-triage-general.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&query_based_on=General+Performance+Triage&query_format=advanced&resolution=---&f1=OP&f2=cf_performance_impact&o2=equals&v2=%3F&f3=CP&f4=OP&f5=product&o5=equals&v5=Core&f6=component&o6=equals&v6=Performance%3A+General&f7=keywords&o7=notsubstring&v7=meta&f8=cf_performance_impact&o8=isempty&f9=CP&f10=OP&f11=product&o11=equals&v11=Core&f12=component&o12=equals&v12=Performance%3A+General&f13=cf_performance_impact&o13=equals&v13=pending-needinfo&f14=flagtypes.name&o14=notsubstring&v14=needinfo&f15=CP&j_top=OR&order=Bug+Number&include_fields=id&include_fields=summary&include_fields=status"
+
+    - name: Download Bugzilla data (triage-memory)
+      run: |
+        curl -o bugzilla-data-triage-memory.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&query_based_on=Memory+Performance+Triage&query_format=advanced&resolution=---&f1=OP&f2=product&o2=equals&v2=Core&f3=component&o3=equals&v3=Performance%3A+Memory&f4=keywords&o4=notsubstring&v4=meta&f5=cf_performance_impact&o5=isempty&f6=CP&f7=OP&f8=product&o8=equals&v8=Core&f9=component&o9=equals&v9=Performance%3A+Memory&f10=cf_performance_impact&o10=equals&v10=pending-needinfo&f11=flagtypes.name&o11=notsubstring&v11=needinfo&f12=CP&j_top=OR&order=Bug+Number&include_fields=id&include_fields=summary&include_fields=status"
+
+    - name: Download Bugzilla data (triage-navigation)
+      run: |
+        curl -o bugzilla-data-triage-navigation.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&query_format=advanced&resolution=---&f1=OP&f2=product&o2=equals&v2=Core&f3=component&o3=equals&v3=Performance%3A+Navigation&f4=keywords&o4=notsubstring&v4=meta&f5=cf_performance_impact&o5=isempty&f6=CP&f7=OP&f8=product&o8=equals&v8=Core&f9=component&o9=equals&v9=Performance%3A+Navigation&f10=cf_performance_impact&o10=equals&v10=pending-needinfo&f11=flagtypes.name&o11=notsubstring&v11=needinfo&f12=CP&j_top=OR&order=Bug+Number&include_fields=id&include_fields=summary&include_fields=status"
+
+    - name: Download Bugzilla data (triage-responsiveness)
+      run: |
+        curl -o bugzilla-data-triage-responsiveness.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&query_based_on=Responsiveness+Performance+Triage&query_format=advanced&resolution=---&f1=OP&f2=product&o2=equals&v2=Core&f3=component&o3=equals&v3=Performance%3A+Responsiveness&f4=keywords&o4=notsubstring&v4=meta&f5=cf_performance_impact&o5=isempty&f6=CP&f7=OP&f8=product&o8=equals&v8=Core&f9=component&o9=equals&v9=Performance%3A+Responsiveness&f10=cf_performance_impact&o10=equals&v10=pending-needinfo&f11=flagtypes.name&o11=notsubstring&v11=needinfo&f12=CP&j_top=OR&order=Bug+Number&include_fields=id&include_fields=summary&include_fields=status"
+
+    - name: Download Bugzilla data (triage-startup)
+      run: |
+        curl -o bugzilla-data-triage-startup.json "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status,component,creation_time,last_change_time,keywords,priority,severity,op_sys&query_based_on=Startup+Performance+Triage&query_format=advanced&resolution=---&f1=OP&f2=product&o2=equals&v2=Core&f3=component&o3=equals&v3=Performance%3A+Startup&f4=keywords&o4=notsubstring&v4=meta&f5=cf_performance_impact&o5=isempty&f6=CP&f7=OP&f8=product&o8=equals&v8=Core&f9=component&o9=equals&v9=Performance%3A+Startup&f10=cf_performance_impact&o10=equals&v10=pending-needinfo&f11=flagtypes.name&o11=notsubstring&v11=needinfo&f12=CP&j_top=OR&order=Bug+Number&include_fields=id&include_fields=summary&include_fields=status"
 
     - name: Merge JSON files
       run: |
-        jq -n '{high: $high[], medium: $medium[], low: $low[], untriaged: $untriaged[], needinfo: $needinfo[], regressions: $regressions[]}' \
+        jq -n '{high: $high[], medium: $medium[], low: $low[], untriaged: $untriaged[], needinfo: $needinfo[], regressions: $regressions[], triageGeneral: $triageGeneral[], triageMemory: $triageMemory[], triageNavigation: $triageNavigation[], triageResponsiveness: $triageResponsiveness[], triageStartup: $triageStartup[]}' \
           --slurpfile high bugzilla-data-high.json \
           --slurpfile medium bugzilla-data-medium.json \
           --slurpfile low bugzilla-data-low.json \
           --slurpfile untriaged bugzilla-data-untriaged.json \
           --slurpfile needinfo bugzilla-data-needinfo.json \
-          --slurpfile regressions bugzilla-data-regressions.json > bugzilla-data-all.json
+          --slurpfile regressions bugzilla-data-regressions.json \
+          --slurpfile triageGeneral bugzilla-data-triage-general.json \
+          --slurpfile triageMemory bugzilla-data-triage-memory.json \
+          --slurpfile triageNavigation bugzilla-data-triage-navigation.json \
+          --slurpfile triageResponsiveness bugzilla-data-triage-responsiveness.json \
+          --slurpfile triageStartup bugzilla-data-triage-startup.json > bugzilla-data-all.json
 
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add bugzilla-data-medium.json bugzilla-data-low.json bugzilla-data-high.json bugzilla-data-untriaged.json bugzilla-data-needinfo.json bugzilla-data-all.json bugzilla-data-regressions.json
+        git add bugzilla-data-medium.json bugzilla-data-low.json bugzilla-data-high.json bugzilla-data-untriaged.json bugzilla-data-needinfo.json bugzilla-data-all.json bugzilla-data-regressions.json bugzilla-data-triage-general.json bugzilla-data-triage-memory.json bugzilla-data-triage-navigation.json bugzilla-data-triage-responsiveness.json bugzilla-data-triage-startup.json
         git commit -m "Update Bugzilla data"
         git push
