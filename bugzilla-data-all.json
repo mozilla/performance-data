@@ -15298,5 +15298,629 @@
         "severity": "--"
       }
     ]
+  },
+  "triageGeneral": {
+    "bugs": [
+      {
+        "status": "NEW",
+        "summary": "Compositor CSS animations are not paused in fully occluded windows",
+        "id": 1771902
+      },
+      {
+        "summary": "Lenovo Privacy Guard with \"Enable this feature when typing passwords\" causing excessive UI responsiveness delays (jank)",
+        "id": 1777875,
+        "status": "NEW"
+      },
+      {
+        "status": "NEW",
+        "id": 1931717,
+        "summary": "[meta] High OOM rate and CC time in YouTube"
+      },
+      {
+        "id": 1939354,
+        "summary": "RAM too much",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "NEW",
+        "id": 1940667,
+        "summary": "30s of jank on parent-process doing something around getFixupURIInfo and ContentAreaDropListener.sys.mjs (resource://gre/modules/URIFixup.sys.mjs:278:18)"
+      },
+      {
+        "summary": "Explore AvlTree improvements",
+        "id": 1941608,
+        "status": "NEW"
+      },
+      {
+        "status": "NEW",
+        "id": 1941716,
+        "summary": "On a fresh profile, Negative heap-unclassified on \"My Bugs\" query on b.m.o"
+      },
+      {
+        "id": 1942031,
+        "summary": "Bad canvas performance on this example (nokiadesignarchive.aalto.fi)",
+        "status": "NEW"
+      },
+      {
+        "id": 1943419,
+        "summary": "Fluidd memory leak",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "High CPU usage on Debian x64 bookworm (VMware player guest)",
+        "id": 1943503,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1943841,
+        "summary": "(With Ublock or \"Snap links plus addon\") Testcase generating 1000 iframes is 3.3x slower in Nightly and gets superlinearly slower with increase in number of iframes, uses more RAM, and memory doesnt get released fully if you reload the page",
+        "status": "NEW"
+      },
+      {
+        "summary": "airbnb.com - Attempting to enter a destination in the search by using the gboard causes the gboard to become unresponsive",
+        "id": 1945665,
+        "status": "NEW"
+      },
+      {
+        "status": "NEW",
+        "id": 1946248,
+        "summary": "Too much time spent in gfxMacPlatformFontList::DeprecatedFamilyIsAvailable during startup"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Consume too much memory",
+        "id": 1946913
+      },
+      {
+        "summary": "Meta Messenger causing high CPU load",
+        "id": 1949252,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1950073,
+        "summary": "www.kiwico.com - Checkout page becomes unresponsive",
+        "status": "NEW"
+      },
+      {
+        "id": 1950901,
+        "summary": "Testcase generating N=5K forms (using credential mgmt API?) takes 30s in parent-process and 50s in content process. Chrome takes 9s.",
+        "status": "NEW"
+      },
+      {
+        "id": 1955077,
+        "summary": "Firefox freezes and cause Windows hang when access certain websites",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1955509,
+        "summary": "Constant CPU usage while idle on the Tiki.org website front page",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1956850,
+        "summary": "Ublock Origin increases the time to load a simple demo by 4x and uses ~3x more RAM (time spent in wrappercache, proxy, xraywrapper, minorGC and related stuff)",
+        "status": "NEW"
+      },
+      {
+        "summary": "Testcase generating N=500 forms and submitting them takes 27s in both parent and content processes,and is 675x slower than Chrome (Part2 of bug 1950901)",
+        "id": 1957692,
+        "status": "NEW"
+      },
+      {
+        "summary": "x.com - High battery drain",
+        "id": 1958480,
+        "status": "NEW"
+      },
+      {
+        "status": "NEW",
+        "id": 1958712,
+        "summary": "Testcase generating N <META> elements is 20x slower than Chrome and does weird stuff in Compositor and SceneBuilder (PAPZCTreeManager::Msg_UpdateZoomConstraints)"
+      },
+      {
+        "summary": "openstreetmap iD editor - slow zooming",
+        "id": 1959837,
+        "status": "NEW"
+      },
+      {
+        "status": "NEW",
+        "summary": "x.com - Scroll lagging after performing a subsequent query",
+        "id": 1964374
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1965718,
+        "summary": "Google Maps framedrops when I'm panning the map"
+      },
+      {
+        "status": "NEW",
+        "summary": "JS isn't minified in Fenix release builds",
+        "id": 1966492
+      },
+      {
+        "id": 1967143,
+        "summary": "firefox taking too much memory",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1967585,
+        "summary": "Excessive memory allocation when toolbar icons are updated (e.g., during downloads or extension changes) — sometimes triggers OOM killer",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "NEW",
+        "id": 1972941,
+        "summary": "[Linux] File downloading is CPU-intensive"
+      },
+      {
+        "id": 1975272,
+        "summary": "Animated newtab background images consume CPU even when not in the foreground",
+        "status": "NEW"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "EspnCricInfo site creates massive CPU and Memory usage FF140.0.2",
+        "id": 1975348
+      },
+      {
+        "id": 1982980,
+        "summary": "Memory leak in Firefox on Android when repeatedly appending and removing an iframe",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "www.pexels.com - Stuttering/choppy scroll",
+        "id": 1988312,
+        "status": "NEW"
+      },
+      {
+        "summary": "Facebook search bar animation stutters on Firefox",
+        "id": 1988605,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1988608,
+        "summary": "Tabs in Firefox refresh when multitasking"
+      },
+      {
+        "status": "NEW",
+        "summary": "Slow scrolling performance on particular sites (mastodon)",
+        "id": 1988762
+      },
+      {
+        "summary": "MutationObserver's getReceiverFor is slow when there are a lot of observers",
+        "id": 1988776,
+        "status": "NEW"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1993778,
+        "summary": "Got a new Mac (new to the OS) and noticed only with Firefox does battery drain rapidly, used Firefox Profiler (below) to see if anything stuck out but didn't see anything, any help appreciated"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Firefox is nearly unusable on a busy system (pages won't load if CPU is used heavily)",
+        "id": 1994431
+      },
+      {
+        "summary": "Firefox CPU usage spikes to 100%+ on some sites, particularly when opening new tabs",
+        "id": 1994817,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1996484,
+        "summary": "https://www.rmcbfmplay.com/",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Firefox hangs on Mac Apple M4 Pro OS Tahoe 26.0.1",
+        "id": 1997359,
+        "status": "NEW"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1997618,
+        "summary": "Websites will not load in Firefox while same page will load in Safari/Chrome"
+      }
+    ]
+  },
+  "triageMemory": {
+    "bugs": [
+      {
+        "id": 1893881,
+        "summary": "randomly massive memory usage with browser freeze",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1894286,
+        "summary": "Multiple gigabytes of tiny detached windows",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Memory Leak on newest version. 14 task manager occurrences from one tab open using over a gig of memory. Laptop is overheating and only fix is reset computer.",
+        "id": 1896500,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1900881,
+        "summary": "ASan Nightly memory leak on certain webpages"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1907716,
+        "summary": "Firefox used up most of my system RAM"
+      },
+      {
+        "id": 1913582,
+        "summary": "Very high memory usage, Leaks all system RAM and quits",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Ever increasing ram usage on mac",
+        "id": 1916021
+      },
+      {
+        "summary": "Firefox is using too much memory - 4GB. 4 Add-ons",
+        "id": 1921757,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1922234,
+        "summary": "High shared memory usage on lagosjumpradio.com",
+        "status": "NEW"
+      },
+      {
+        "id": 1924220,
+        "summary": "Apple Silicon Firefox Memory Leak",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "High memory usage",
+        "id": 1925226
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1925736,
+        "summary": "12GB+ memory leak in an extension. About:memory shows tons of similar data:image /png base64 URIs  (Was: Memory leak in Ubuntu 24.04 // Firefox 131.0.2)"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Firefox working-set size increases over time -- Fail to release pages?",
+        "id": 1931602
+      },
+      {
+        "summary": "Firefox uses ~8GB (or more) to load https://www.w3schools.com/html/html_favicon.asp, Chrome tops out at 2GB",
+        "id": 1931634,
+        "status": "NEW"
+      },
+      {
+        "id": 1931914,
+        "summary": "Firefox 133 and 134 betas repeatedly use excessive memory and hang when releasing",
+        "status": "NEW"
+      },
+      {
+        "id": 1932080,
+        "summary": "Memory leaks with WebExtensions",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Memory Leak When Rendering Large Data Tables in Firefox",
+        "id": 1934426,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1935516,
+        "summary": "there might be a memory leak, excessive ram usage impacting functions",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Memory leak caused by minimizing or obscuring the browser with a fullscreen window",
+        "id": 1935525
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1937327,
+        "summary": "memory usage too high, up to 2gb of ram"
+      },
+      {
+        "summary": "Firefox nightly 135.0a1 for macos high ram usage",
+        "id": 1937651,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1939051,
+        "summary": "Runaway memory leak every 24 hours",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1939357,
+        "summary": "Firefox using 2+ GB of memory even with less than 6 tabs open"
+      },
+      {
+        "id": 1939424,
+        "summary": "RAM usage",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1939960,
+        "summary": "Despite having all of opened tabs being discarded, amount of memory firefox uses is still very high."
+      },
+      {
+        "id": 1941208,
+        "summary": "Memory leak",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1941720,
+        "summary": "Serious memory bloat in gfx"
+      },
+      {
+        "id": 1942536,
+        "summary": "High RAM Usage",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Very high memory usage (4GB) on YouTube",
+        "id": 1945363,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Firefox causes memory leaks",
+        "id": 1945742,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "memory issue",
+        "id": 1946907
+      },
+      {
+        "id": 1947295,
+        "summary": "Weird memory usage for Pre-loaded New Tab In MacOS",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1948501,
+        "summary": "Firefox is using a lot of RAM on youtube"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Firefox uses too much ram",
+        "id": 1949721
+      },
+      {
+        "summary": "memory youtube",
+        "id": 1951532,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1952233,
+        "summary": "Very high and unusual memory usage from Firefox",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1952640,
+        "summary": "Mozilla Consumes Lots of memory Recently after updating to new version I believe",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1952654,
+        "summary": "high memory usuage",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Why does Firefox consume alot of memory when posting multipart/form-data request with total size greater that ~5GB?",
+        "id": 1953185,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1955032,
+        "summary": "discovered memory leak w/ firefox for windows after reloading tabs - tried w/ tab reload and powershell - all ram gets consumed",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1955512,
+        "summary": "Excess memory usage",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1955563,
+        "summary": "Firefox is using too much RAM"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Big memory leak when browsing aliexpress",
+        "id": 1956680
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "inactive youtube tab can grow to 2 GB memory usage and slow down the system dramatically",
+        "id": 1957081
+      },
+      {
+        "status": "NEW",
+        "summary": "Rapid memory growth on https://observablehq.com/d/a741f9a27e8c0e73. And almost all of it is heap-unclassified (d3.js)",
+        "id": 1957209
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Firefox uses 1.5 GB of RAM with only two tabs open in Windows 11, and causes frequent crashes.",
+        "id": 1959569
+      },
+      {
+        "id": 1961415,
+        "summary": "Firefox memory leak when watching YouTube Shorts",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "there are memory problems when other apps try to use firefox such as plugins, or sometimes it just randomly removes memory. i got signed out of everything.",
+        "id": 1961707,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1964744,
+        "summary": "high cpu memory youtube",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Severe memory problem",
+        "id": 1967687,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Firefox stuck on garbage collection infinitely when using youtube",
+        "id": 1968166,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1968605,
+        "summary": "FirefoxCP Isolated web content eats ram Macbook air m4 and m1"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1969774,
+        "summary": "Firefox consume a lot of RAM after latest update"
+      },
+      {
+        "summary": "Extremely high memory usage (16GB) after leaving tab open for multiple hours",
+        "id": 1972891,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "NEW",
+        "id": 1974559,
+        "summary": "Modified codepen demo takes 4GB RAM with all of it in heap-unclassified. It is also ~2x slower in firefox."
+      },
+      {
+        "id": 1976603,
+        "summary": "Unusual memory usage while minimized.",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "NEW",
+        "id": 1977091,
+        "summary": "Codepen demo (https://codepen.io/shubniggurath/pen/MYwdaEq) can spend 15 seconds around cleanup on dragging some control sliders"
+      },
+      {
+        "summary": "High RAM memory usage in Firefox 141 (or memory leak)",
+        "id": 1979506,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1980023,
+        "summary": "Memory leak in main process over extended (2+ days) sessions",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Incorporate Linux memory PSI on tab unloading",
+        "id": 1982423,
+        "status": "NEW"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Firefox locks up on macOS Tahoe (version 26)",
+        "id": 1982717
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1983342,
+        "summary": "Huge memory leak.  Almost unusable with hangs gyrations in search/tab"
+      },
+      {
+        "summary": "Scrolling web page very high CPU usage and blank sections (Decode of multiple large images on multiple TC threads, rapid rise in shared memory leading to hang/OOM)",
+        "id": 1985723,
+        "status": "NEW"
+      },
+      {
+        "summary": "memory leak when scrolling code blocks on chatgpt.com",
+        "id": 1987212,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Firefox freezing Linux Kernel by propagating Memory Leak on Website",
+        "id": 1989835
+      },
+      {
+        "summary": "[macOS] Over 2GB of \"decommitted\" memory, despite massive swap usage",
+        "id": 1990171,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "id": 1990191,
+        "summary": "memory leak on macos",
+        "status": "UNCONFIRMED"
+      },
+      {
+        "status": "NEW",
+        "summary": "High RAM memory usage in Firefox 141 using specifc AddOns - relation to 1979506",
+        "id": 1990814
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "big memory usage on mac",
+        "id": 1991006
+      },
+      {
+        "summary": "Firefox uses a 2000MB+ memory with 6 tabs open.",
+        "id": 1994902,
+        "status": "UNCONFIRMED"
+      },
+      {
+        "summary": "Send PSI values when a content process is killed by OOM killer",
+        "id": 1995907,
+        "status": "ASSIGNED"
+      },
+      {
+        "status": "UNCONFIRMED",
+        "id": 1996795,
+        "summary": "Memory leak in main Firefox proces"
+      }
+    ]
+  },
+  "triageNavigation": {
+    "bugs": []
+  },
+  "triageResponsiveness": {
+    "bugs": [
+      {
+        "status": "NEW",
+        "summary": "Lagging and hanging very slow, unresponsive for seconds up to 10s of seconds - long CC on LookerStudio",
+        "id": 1980116
+      },
+      {
+        "status": "NEW",
+        "summary": "Firefox hangs on MacOS for seconds, getting worse over time",
+        "id": 1981051
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Lag spike after same page navigation (history.pushState)",
+        "id": 1983354
+      },
+      {
+        "status": "UNCONFIRMED",
+        "summary": "Firefox hangs on opening new webpages",
+        "id": 1988359
+      }
+    ]
+  },
+  "triageStartup": {
+    "bugs": [
+      {
+        "id": 1968975,
+        "status": "UNCONFIRMED",
+        "summary": "[Windows 10/11] Firefox on the store takes a good few minutes to autostart"
+      }
+    ]
   }
 }
