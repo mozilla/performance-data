@@ -1,1 +1,1 @@
-{"bugs":[{"status":"UNCONFIRMED","id":1994549,"summary":"Firefox unable to load pages or make network requests when other processes are using high CPU on Mac"}]}
+{"bugs":[{"id":1994549,"summary":"Firefox unable to load pages or make network requests when other processes are using high CPU on Mac","status":"UNCONFIRMED"}]}
