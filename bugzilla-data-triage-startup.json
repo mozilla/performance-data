@@ -1,1 +1,1 @@
-{"bugs":[{"id":1968975,"summary":"[Windows 10/11] Firefox on the store takes a good few minutes to autostart","status":"UNCONFIRMED"},{"id":2012705,"status":"NEW","summary":"Failed file operation during startup that potentially could be eliminated"}]}
+{"bugs":[{"summary":"[Windows 10/11] Firefox on the store takes a good few minutes to autostart","id":1968975,"status":"UNCONFIRMED"},{"status":"NEW","id":2012705,"summary":"Failed file operation during startup that potentially could be eliminated"}]}
