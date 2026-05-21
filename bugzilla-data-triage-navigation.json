@@ -1,1 +1,1 @@
-{"bugs":[{"summary":"Enable dom.script_loader.external_scripts.speculate_link_preload.enabled","status":"ASSIGNED","id":2037599}]}
+{"bugs":[{"id":2037599,"summary":"Enable dom.script_loader.external_scripts.speculate_link_preload.enabled","status":"ASSIGNED"}]}
