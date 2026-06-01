@@ -1,1 +1,1 @@
-{"bugs":[]}
+{"bugs":[{"id":2043955,"status":"NEW","summary":"Crash in [@ mozilla::dom::ScriptLoadContext::~ScriptLoadContext]"}]}
