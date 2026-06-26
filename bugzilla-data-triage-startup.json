@@ -1,1 +1,1 @@
-{"bugs":[{"summary":"[Windows 10/11] Firefox on the store takes a good few minutes to autostart","status":"UNCONFIRMED","id":1968975},{"id":2048221,"status":"ASSIGNED","summary":"StartupCache::WriteToDisk optimization"}]}
+{"bugs":[{"id":1968975,"summary":"[Windows 10/11] Firefox on the store takes a good few minutes to autostart","status":"UNCONFIRMED"},{"status":"ASSIGNED","id":2048221,"summary":"StartupCache::WriteToDisk optimization"}]}
