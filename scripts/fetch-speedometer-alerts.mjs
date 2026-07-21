@@ -192,56 +192,16 @@ function initCacheGroup(config) {
   };
 }
 
-function pruneSummary(summary) {
-  return {
-    id: summary.id,
-    push_timestamp: summary.push_timestamp,
-    prev_push_timestamp: summary.prev_push_timestamp ?? null,
-    repository: ALERT_REPOSITORY
-  };
+function formatSummary(summary) {
+  // Keep the full Treeherder payload so the cache matches the old dashboard-side fetch shape.
+  return summary;
 }
 
-function pruneAlert(alert, summary) {
-  const sig = alert.series_signature || {};
-
+function formatAlert(alert, summary) {
   return {
-    id: alert.id,
-    status: alert.status,
-    series_signature: {
-      id: sig.id,
-      framework_id: sig.framework_id,
-      signature_hash: sig.signature_hash,
-      machine_platform: sig.machine_platform,
-      suite: sig.suite,
-      test: sig.test,
-      lower_is_better: sig.lower_is_better,
-      has_subtests: sig.has_subtests,
-      option_collection_hash: sig.option_collection_hash,
-      tags: sig.tags,
-      extra_options: sig.extra_options,
-      measurement_unit: sig.measurement_unit,
-      suite_public_name: sig.suite_public_name,
-      test_public_name: sig.test_public_name
-    },
-    taskcluster_metadata: alert.taskcluster_metadata ?? null,
-    prev_taskcluster_metadata: alert.prev_taskcluster_metadata ?? null,
-    profile_url: alert.profile_url ?? null,
-    prev_profile_url: alert.prev_profile_url ?? null,
-    is_regression: alert.is_regression,
-    prev_value: alert.prev_value,
-    new_value: alert.new_value,
-    t_value: alert.t_value,
-    amount_abs: alert.amount_abs,
-    amount_pct: alert.amount_pct,
-    summary_id: summary.id,
-    related_summary_id: alert.related_summary_id ?? null,
-    manually_created: alert.manually_created ?? false,
-    classifier: alert.classifier ?? null,
-    starred: alert.starred ?? false,
-    classifier_email: alert.classifier_email ?? null,
-    side_by_side_available: alert.side_by_side_available ?? false,
-    noise_profile: alert.noise_profile ?? null,
+    ...alert,
     push_timestamp: summary.push_timestamp,
+    summary_id: summary.id,
     repository: ALERT_REPOSITORY
   };
 }
@@ -264,8 +224,8 @@ function addAlert(cache, addedAlertKeys, osKey, testName, alert, summary) {
   }
 
   testAlertKeys.add(alertKey);
-  group.alerts[testName].push(pruneAlert(alert, summary));
-  group.alertSummaries[summary.id] = pruneSummary(summary);
+  group.alerts[testName].push(formatAlert(alert, summary));
+  group.alertSummaries[summary.id] = formatSummary(summary);
   return true;
 }
 
