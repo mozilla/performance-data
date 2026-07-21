@@ -171,7 +171,7 @@ function relatedAlertMatchesTest(alert, testName) {
 }
 
 function membershipKey(membership) {
-  return `${membership.osKey}|${membership.testName}`;
+  return `${membership.osKey}|${membership.testName}|${membership.platform}`;
 }
 
 function addMembership(signatureMemberships, sigId, membership) {
@@ -206,24 +206,12 @@ function formatAlert(alert, summary) {
   };
 }
 
-function addAlert(cache, addedAlertKeys, osKey, testName, alert, summary) {
+function addAlert(cache, osKey, testName, alert, summary) {
   const group = cache.by_os[osKey];
   if (!group) {
     throw new Error(`Unknown Speedometer platform group: ${osKey}`);
   }
 
-  const alertKey = `${summary.id}:${alert.id}:${alert.series_signature?.id ?? 'unknown'}`;
-  const groupTestKey = `${osKey}|${testName}`;
-  if (!addedAlertKeys.has(groupTestKey)) {
-    addedAlertKeys.set(groupTestKey, new Set());
-  }
-
-  const testAlertKeys = addedAlertKeys.get(groupTestKey);
-  if (testAlertKeys.has(alertKey)) {
-    return false;
-  }
-
-  testAlertKeys.add(alertKey);
   group.alerts[testName].push(formatAlert(alert, summary));
   group.alertSummaries[summary.id] = formatSummary(summary);
   return true;
@@ -264,7 +252,7 @@ function buildSignatureMemberships(signaturesByPlatform) {
         signatureCountByGroup[osKey][testName] = (signatureCountByGroup[osKey][testName] || 0) + canonicalSignatures.length;
 
         for (const sig of canonicalSignatures) {
-          addMembership(signatureMemberships, sig.id, { osKey, testName });
+          addMembership(signatureMemberships, sig.id, { osKey, testName, platform });
         }
       }
     }
@@ -331,7 +319,6 @@ async function main() {
   const summaries = await fetchAlertSummaries();
   const summariesById = new Map(summaries.map(summary => [summary.id, summary]));
   const relatedMemberships = new Map();
-  const addedAlertKeys = new Map();
 
   for (const summary of summaries) {
     for (const alert of summary.alerts || []) {
@@ -342,7 +329,7 @@ async function main() {
       }
 
       for (const membership of memberships.values()) {
-        addAlert(cache, addedAlertKeys, membership.osKey, membership.testName, alert, summary);
+        addAlert(cache, membership.osKey, membership.testName, alert, summary);
 
         if (alert.related_summary_id) {
           if (!relatedMemberships.has(alert.related_summary_id)) {
@@ -366,7 +353,7 @@ async function main() {
     for (const membership of memberships.values()) {
       for (const alert of summary.alerts || []) {
         if (relatedAlertMatchesTest(alert, membership.testName)) {
-          addAlert(cache, addedAlertKeys, membership.osKey, membership.testName, alert, summary);
+          addAlert(cache, membership.osKey, membership.testName, alert, summary);
         }
       }
     }
