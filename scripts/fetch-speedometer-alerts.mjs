@@ -24,7 +24,7 @@ const platformConfigs = {
     supportsSafari: false
   },
   osxm4: {
-    platforms: ['macosx1500-aarch64-shippable'],
+    platforms: ['macosx1500-aarch64-nightlyasrelease', 'macosx1500-aarch64-shippable'],
     supportsSafari: true
   },
   linux: {
@@ -206,14 +206,33 @@ function formatAlert(alert, summary) {
   };
 }
 
+function alertCacheKey(alert) {
+  return `${alert.summary_id}|${alert.id}|${alert.series_signature?.id}|${alert.series_signature?.test}`;
+}
+
+function addAlertSummary(cache, osKey, summary) {
+  const group = cache.by_os[osKey];
+  if (!group) {
+    throw new Error(`Unknown Speedometer platform group: ${osKey}`);
+  }
+
+  group.alertSummaries[summary.id] = formatSummary(summary);
+}
+
 function addAlert(cache, osKey, testName, alert, summary) {
   const group = cache.by_os[osKey];
   if (!group) {
     throw new Error(`Unknown Speedometer platform group: ${osKey}`);
   }
 
-  group.alerts[testName].push(formatAlert(alert, summary));
-  group.alertSummaries[summary.id] = formatSummary(summary);
+  const formattedAlert = formatAlert(alert, summary);
+  const formattedAlertKey = alertCacheKey(formattedAlert);
+
+  if (!group.alerts[testName].some(existingAlert => alertCacheKey(existingAlert) === formattedAlertKey)) {
+    group.alerts[testName].push(formattedAlert);
+  }
+
+  addAlertSummary(cache, osKey, summary);
   return true;
 }
 
@@ -351,6 +370,8 @@ async function main() {
     }
 
     for (const membership of memberships.values()) {
+      addAlertSummary(cache, membership.osKey, summary);
+
       for (const alert of summary.alerts || []) {
         if (relatedAlertMatchesTest(alert, membership.testName)) {
           addAlert(cache, membership.osKey, membership.testName, alert, summary);
