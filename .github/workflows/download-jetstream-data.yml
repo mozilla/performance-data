@@ -1,0 +1,43 @@
+name: Download Jetstream Data
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'  # Runs every 12 hours.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: download-jetstream-data
+  cancel-in-progress: false
+
+jobs:
+  download-jetstream-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Download Jetstream3 data
+      run: node scripts/fetch-jetstream-data.mjs
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add jetstream-data.json.gz
+        if git diff --cached --quiet; then
+          echo "No Jetstream3 data changes"
+          exit 0
+        fi
+        git commit -m "Update Jetstream3 data cache"
+        git push
