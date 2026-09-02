@@ -1,1 +1,1 @@
-{"bugs":[{"id":2064911,"status":"NEW","summary":"Fenix: ~150-220ms delay between Home screen url bar Enter and LoadURI"},{"summary":"With Fenix already launched: ~120ms delay between applink intent receipt and LoadURI","status":"NEW","id":2064919}]}
+{"bugs":[{"summary":"Fenix: ~150-220ms delay between Home screen url bar Enter and LoadURI","status":"NEW","id":2064911},{"status":"NEW","summary":"With Fenix already launched: ~120ms delay between applink intent receipt and LoadURI","id":2064919}]}
