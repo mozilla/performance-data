@@ -120,6 +120,36 @@ function subtestStartDate() {
   return midnight.toISOString().replace(/\.\d{3}Z$/, '');
 }
 
+// One signature per application/platform/test: the Fission run if there is
+// one, then the fewest extra_options (so not a profiled or other variant), then
+// the newest. Desktop always runs with Fission; Android also has a non-Fission
+// job, which is not the one to report. Matches selectCanonicalSignatures in
+// mozilla/performance.
+function selectCanonicalSignatures(signatures) {
+  const options = sig => sig.extra_options ?? [];
+  const hasFission = sig => options(sig).includes('fission');
+
+  const isMoreCanonical = (candidate, current) => {
+    if (hasFission(candidate) !== hasFission(current)) {
+      return hasFission(candidate);
+    }
+    if (options(candidate).length !== options(current).length) {
+      return options(candidate).length < options(current).length;
+    }
+    return candidate.id > current.id;
+  };
+
+  const canonical = new Map();
+  for (const sig of signatures) {
+    const key = [sig.application, sig.machine_platform, sig.test].join('|');
+    const current = canonical.get(key);
+    if (!current || isMoreCanonical(sig, current)) {
+      canonical.set(key, sig);
+    }
+  }
+  return [...canonical.values()];
+}
+
 async function fetchSignatures() {
   const url = `${TREEHERDER_API}/project/${REPOSITORY}/performance/signatures/?framework=${FRAMEWORK_ID}`;
   console.log('Fetching jetstream3 signatures');
@@ -139,8 +169,14 @@ async function fetchSignatures() {
     }
   }
 
-  console.log(`Found ${scoreSignatures.length} score signatures and ${subtestSignatures.length} -Geometric signatures`);
-  return { scoreSignatures, subtestSignatures };
+  const canonicalScore = selectCanonicalSignatures(scoreSignatures);
+  const canonicalSubtest = selectCanonicalSignatures(subtestSignatures);
+
+  console.log(
+    `Found ${canonicalScore.length} score signatures and ${canonicalSubtest.length} -Geometric signatures ` +
+      `(of ${scoreSignatures.length} and ${subtestSignatures.length} before dropping variants)`
+  );
+  return { scoreSignatures: canonicalScore, subtestSignatures: canonicalSubtest };
 }
 
 // Fetch every datum for the given signatures since startDate, tagging each with
