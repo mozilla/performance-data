@@ -10167,7 +10167,7 @@
           "perf:startup",
           "reproducible"
         ],
-        "last_change_time": "2026-10-20T13:50:03Z",
+        "last_change_time": "2026-11-04T18:25:18Z",
         "op_sys": "Linux",
         "priority": "P3",
         "severity": "S3",
@@ -13471,6 +13471,22 @@
         "summary": "Updating aria-selected while a tabpanel is removed from the DOM destroys ~5,700 accessibles at ~48µs each, blocking the main thread ~280ms per tab switch"
       },
       {
+        "component": "Graphics: WebRender",
+        "creation_time": "2026-09-24T12:36:42Z",
+        "id": 2075222,
+        "keywords": [
+          "webcompat:contact-ready",
+          "webcompat:needs-diagnosis",
+          "webcompat:site-report"
+        ],
+        "last_change_time": "2026-11-04T19:13:48Z",
+        "op_sys": "Android",
+        "priority": "--",
+        "severity": "S3",
+        "status": "NEW",
+        "summary": "very slow performance on Gemini main page"
+      },
+      {
         "component": "Downloads Panel",
         "creation_time": "2026-10-07T11:48:09Z",
         "id": 2079239,
@@ -15076,7 +15092,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-02T16:46:11Z",
+        "last_change_time": "2026-11-04T22:30:48Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15092,10 +15108,10 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-10-29T17:18:35Z",
+        "last_change_time": "2026-11-04T14:05:40Z",
         "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
+        "priority": "P5",
+        "severity": "S4",
         "status": "ASSIGNED",
         "summary": "20.56 - 3.88% reddit-billgates-post-2.top fcp + 16 more (Android, Linux, Windows) regression on Thu October 15 2026"
       },
@@ -15107,7 +15123,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-02T22:59:01Z",
+        "last_change_time": "2026-11-04T21:05:03Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "S3",
@@ -15140,7 +15156,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-10-29T00:28:28Z",
+        "last_change_time": "2026-11-04T18:59:21Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15230,23 +15246,6 @@
         "summary": "107.31 - 6.98% welcome powerUsage_cpu_cores + 17 more (Windows) regression on Wed October 28 2026"
       },
       {
-        "component": "Performance",
-        "creation_time": "2026-11-02T08:52:17Z",
-        "id": 2087976,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-03T14:23:02Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "17.24 - 16.52% dromaeo_dom + 1 more (Linux) regression on Wed October 28 2026"
-      },
-      {
         "component": "DOM: Core & HTML",
         "creation_time": "2026-11-02T11:31:23Z",
         "id": 2088019,
@@ -15262,23 +15261,6 @@
         "severity": "--",
         "status": "NEW",
         "summary": "4.54 - 3.7% damp console.log-in-loop-content-process-string + 15 more (Linux, OSX) regression on Tue October 27 2026"
-      },
-      {
-        "component": "Layout: Text and Fonts",
-        "creation_time": "2026-11-02T16:57:06Z",
-        "id": 2088170,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-03T21:46:22Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "ASSIGNED",
-        "summary": "20.99 - 6.45% pdfpaint issue9278.pdf + 7 more (Linux) regression on Wed October 28 2026"
       },
       {
         "component": "Add-ons Manager",
@@ -15345,40 +15327,6 @@
         "summary": "35.65 - 2.55% speedometer3 perfstats-NonIdleMajorGC + 1 more (Linux, OSX) regression on Mon November 2 2026"
       },
       {
-        "component": "JavaScript Engine",
-        "creation_time": "2026-11-03T13:15:10Z",
-        "id": 2088465,
-        "keywords": [
-          "devtools-perf-regression",
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-03T13:44:01Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "57.03 - 5.56% damp complicated.styleeditor.reload.DAMP + 5 more (Windows) regression on Wed October 28 2026"
-      },
-      {
-        "component": "Framework",
-        "creation_time": "2026-11-03T13:19:38Z",
-        "id": 2088466,
-        "keywords": [
-          "devtools-perf-regression",
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-03T13:43:56Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "74.36 - 2.11% damp simple.netmonitor.exportHar + 37 more (Linux, OSX, Windows) regression on Wed October 28 2026"
-      },
-      {
         "component": "Performance",
         "creation_time": "2026-11-03T13:21:34Z",
         "id": 2088467,
@@ -15387,7 +15335,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-03T16:39:09Z",
+        "last_change_time": "2026-11-04T11:41:36Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15410,6 +15358,39 @@
         "severity": "--",
         "status": "NEW",
         "summary": "56.58 - 2.05% damp complicated.styleeditor.reload.DAMP + 10 more (Windows) regression on Wed October 28 2026"
+      },
+      {
+        "component": "JavaScript Engine: JIT",
+        "creation_time": "2026-11-04T06:45:12Z",
+        "id": 2088763,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-04T06:47:03Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "17.24 - 16.52% dromaeo_dom + 1 more (Linux) regression on Wed October 28 2026"
+      },
+      {
+        "component": "Security: PSM",
+        "creation_time": "2026-11-04T16:33:29Z",
+        "id": 2088996,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-04T16:44:47Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "21.42 - 2.03% nav-bench-overall google-nav-load-score + 16 more (Linux, OSX, Windows) regression on Sat October 31 2026"
       }
     ]
   },
@@ -16111,6 +16092,22 @@
         "summary": "crazyshooters.com: WebGL game lagging despite enabling javascript.options.asmjs"
       },
       {
+        "component": "Graphics: WebRender",
+        "creation_time": "2026-09-24T12:36:42Z",
+        "id": 2075222,
+        "keywords": [
+          "webcompat:contact-ready",
+          "webcompat:needs-diagnosis",
+          "webcompat:site-report"
+        ],
+        "last_change_time": "2026-11-04T19:13:48Z",
+        "op_sys": "Android",
+        "priority": "--",
+        "severity": "S3",
+        "status": "NEW",
+        "summary": "very slow performance on Gemini main page"
+      },
+      {
         "component": "Performance: General",
         "creation_time": "2026-10-02T08:25:01Z",
         "id": 2077430,
@@ -16287,6 +16284,30 @@
         "severity": "--",
         "status": "UNCONFIRMED",
         "summary": "GPU and RAM memory leak on Linux with Nvidia GPU (high gfx/webrender/resource-cache/fonts and shmem)"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-04T08:22:54Z",
+        "id": 2088781,
+        "keywords": [],
+        "last_change_time": "2026-11-04T15:29:18Z",
+        "op_sys": "Windows 10",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "www.youtube.com - Slow page and video load"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-04T14:20:15Z",
+        "id": 2088918,
+        "keywords": [],
+        "last_change_time": "2026-11-04T15:17:50Z",
+        "op_sys": "Android",
+        "priority": "P3",
+        "severity": "S3",
+        "status": "NEW",
+        "summary": "www.projectnomad.us - Scrolling causes the page content to disappear on Android"
       }
     ]
   },
@@ -17825,7 +17846,7 @@
         "creation_time": "2026-11-02T21:18:19Z",
         "id": 2088262,
         "keywords": [],
-        "last_change_time": "2026-11-03T00:17:30Z",
+        "last_change_time": "2026-11-04T12:23:45Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -17865,11 +17886,11 @@
         "creation_time": "2026-11-03T15:50:28Z",
         "id": 2088555,
         "keywords": [],
-        "last_change_time": "2026-11-03T15:52:05Z",
+        "last_change_time": "2026-11-04T19:57:59Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
-        "status": "NEW",
+        "status": "ASSIGNED",
         "summary": "Remove the duplicate first contentful paint histogram `performance.time.to_first_contentful_paint`"
       }
     ]
