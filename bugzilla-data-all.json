@@ -10921,7 +10921,7 @@
         "creation_time": "2024-02-19T09:20:23Z",
         "id": 1880794,
         "keywords": [],
-        "last_change_time": "2026-11-03T05:50:42Z",
+        "last_change_time": "2026-11-05T14:55:20Z",
         "op_sys": "Windows",
         "priority": "P2",
         "severity": "S3",
@@ -13479,7 +13479,7 @@
           "webcompat:needs-diagnosis",
           "webcompat:site-report"
         ],
-        "last_change_time": "2026-11-04T19:13:48Z",
+        "last_change_time": "2026-11-05T19:33:26Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "S3",
@@ -13531,6 +13531,18 @@
         "severity": "--",
         "status": "UNCONFIRMED",
         "summary": "GPU and RAM memory leak on Linux with Nvidia GPU (high gfx/webrender/resource-cache/fonts and shmem)"
+      },
+      {
+        "component": "Storage: Quota Manager",
+        "creation_time": "2026-10-29T11:02:59Z",
+        "id": 2087018,
+        "keywords": [],
+        "last_change_time": "2026-11-05T14:54:32Z",
+        "op_sys": "Unspecified",
+        "priority": "P3",
+        "severity": "S3",
+        "status": "UNCONFIRMED",
+        "summary": "Quota Manager performance degradation after clearing cookies"
       }
     ]
   },
@@ -15092,10 +15104,10 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-04T22:30:48Z",
+        "last_change_time": "2026-11-05T20:33:55Z",
         "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
+        "priority": "P1",
+        "severity": "S4",
         "status": "NEW",
         "summary": "0.71 - 0.61% installer size + 1 more (OSX) regression on Fri October 16 2026"
       },
@@ -15114,21 +15126,6 @@
         "severity": "S4",
         "status": "ASSIGNED",
         "summary": "20.56 - 3.88% reddit-billgates-post-2.top fcp + 16 more (Android, Linux, Windows) regression on Thu October 15 2026"
-      },
-      {
-        "component": "New Tab Page",
-        "creation_time": "2026-10-21T14:49:00Z",
-        "id": 2084669,
-        "keywords": [
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-04T21:05:03Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "S3",
-        "status": "ASSIGNED",
-        "summary": "0.73 - 0.64% installer size + 2 more (OSX, Windows) regression on Fri October 16 2026"
       },
       {
         "component": "PDF Viewer",
@@ -15195,23 +15192,6 @@
         "severity": "--",
         "status": "NEW",
         "summary": "86.57 - 7.2% wikipedia largestContentfulPaint + 5 more (Linux, OSX) regression on Fri October 23 2026"
-      },
-      {
-        "component": "Machine Learning: Frontend",
-        "creation_time": "2026-10-28T10:14:27Z",
-        "id": 2086526,
-        "keywords": [
-          "devtools-perf-regression",
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-02T16:24:08Z",
-        "op_sys": "Unspecified",
-        "priority": "P2",
-        "severity": "S4",
-        "status": "NEW",
-        "summary": "2.73% damp browser-toolbox.styleeditor-ready.DAMP (Windows) regression on Thu October 22 2026"
       },
       {
         "component": "Audio/Video",
@@ -15287,7 +15267,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-03T13:00:23Z",
+        "last_change_time": "2026-11-05T08:44:24Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15312,22 +15292,6 @@
       },
       {
         "component": "Performance",
-        "creation_time": "2026-11-03T13:13:33Z",
-        "id": 2088463,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-03T13:44:03Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "35.65 - 2.55% speedometer3 perfstats-NonIdleMajorGC + 1 more (Linux, OSX) regression on Mon November 2 2026"
-      },
-      {
-        "component": "Performance",
         "creation_time": "2026-11-03T13:21:34Z",
         "id": 2088467,
         "keywords": [
@@ -15335,7 +15299,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-04T11:41:36Z",
+        "last_change_time": "2026-11-05T09:26:34Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15385,12 +15349,28 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-04T16:44:47Z",
+        "last_change_time": "2026-11-06T00:06:33Z",
+        "op_sys": "Unspecified",
+        "priority": "P1",
+        "severity": "S3",
+        "status": "NEW",
+        "summary": "21.42 - 2.03% nav-bench-overall google-nav-load-score + 16 more (Linux, OSX, Windows) regression on Sat October 31 2026"
+      },
+      {
+        "component": "DOM: Navigation",
+        "creation_time": "2026-11-05T13:24:09Z",
+        "id": 2089534,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-05T13:24:09Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
-        "summary": "21.42 - 2.03% nav-bench-overall google-nav-load-score + 16 more (Linux, OSX, Windows) regression on Sat October 31 2026"
+        "summary": "60.65 - 20.79% fandom FirstVisualChange + 7 more (Linux, OSX) regression on Sat October 31 2026"
       }
     ]
   },
@@ -16100,7 +16080,7 @@
           "webcompat:needs-diagnosis",
           "webcompat:site-report"
         ],
-        "last_change_time": "2026-11-04T19:13:48Z",
+        "last_change_time": "2026-11-05T19:33:26Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "S3",
@@ -16176,7 +16156,7 @@
         "creation_time": "2026-10-08T18:24:59Z",
         "id": 2079867,
         "keywords": [],
-        "last_change_time": "2026-10-22T20:27:29Z",
+        "last_change_time": "2026-11-05T13:14:47Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16284,6 +16264,18 @@
         "severity": "--",
         "status": "UNCONFIRMED",
         "summary": "GPU and RAM memory leak on Linux with Nvidia GPU (high gfx/webrender/resource-cache/fonts and shmem)"
+      },
+      {
+        "component": "Storage: Quota Manager",
+        "creation_time": "2026-10-29T11:02:59Z",
+        "id": 2087018,
+        "keywords": [],
+        "last_change_time": "2026-11-05T14:54:32Z",
+        "op_sys": "Unspecified",
+        "priority": "P3",
+        "severity": "S3",
+        "status": "UNCONFIRMED",
+        "summary": "Quota Manager performance degradation after clearing cookies"
       },
       {
         "component": "Performance: General",
@@ -17798,7 +17790,7 @@
         "creation_time": "2026-10-27T18:51:07Z",
         "id": 2086237,
         "keywords": [],
-        "last_change_time": "2026-10-29T19:11:50Z",
+        "last_change_time": "2026-11-05T12:11:56Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
