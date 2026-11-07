@@ -5018,20 +5018,6 @@
         "summary": "If you set a high Polling Rate USB port of the mouse (1000 Hz), there will be noticeable performance issues while moving tabs"
       },
       {
-        "component": "General",
-        "creation_time": "2016-10-03T03:00:35Z",
-        "id": 1307024,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2024-08-14T04:57:13Z",
-        "op_sys": "Linux",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "[Perf] [google docs] Firefox will get 3~9% faster when running gdoc test cases with chrome user agent"
-      },
-      {
         "component": "Layout",
         "creation_time": "2016-10-08T00:18:22Z",
         "id": 1308660,
@@ -15097,21 +15083,6 @@
         "summary": "8.27 - 3% google-docs FirstVisualChange + 7 more (Linux, OSX, Windows) regression on Mon October 5 2026"
       },
       {
-        "component": "New Tab Page",
-        "creation_time": "2026-10-20T07:51:15Z",
-        "id": 2084043,
-        "keywords": [
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-05T20:33:55Z",
-        "op_sys": "Unspecified",
-        "priority": "P1",
-        "severity": "S4",
-        "status": "NEW",
-        "summary": "0.71 - 0.61% installer size + 1 more (OSX) regression on Fri October 16 2026"
-      },
-      {
         "component": "Performance",
         "creation_time": "2026-10-20T16:33:47Z",
         "id": 2084291,
@@ -15120,29 +15091,12 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-04T14:05:40Z",
+        "last_change_time": "2026-11-06T01:47:24Z",
         "op_sys": "Unspecified",
         "priority": "P5",
         "severity": "S4",
         "status": "ASSIGNED",
         "summary": "20.56 - 3.88% reddit-billgates-post-2.top fcp + 16 more (Android, Linux, Windows) regression on Thu October 15 2026"
-      },
-      {
-        "component": "PDF Viewer",
-        "creation_time": "2026-10-27T13:53:14Z",
-        "id": 2086103,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-02T16:43:35Z",
-        "op_sys": "Unspecified",
-        "priority": "P3",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "7.08% pdfpaint javauninstall-7r.pdf (Windows) regression on Mon October 12 2026"
       },
       {
         "component": "Security: PSM",
@@ -15170,7 +15124,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-03T12:09:43Z",
+        "last_change_time": "2026-11-06T01:47:48Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15186,7 +15140,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-03T08:06:02Z",
+        "last_change_time": "2026-11-06T01:47:42Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15202,7 +15156,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-02T16:25:23Z",
+        "last_change_time": "2026-11-06T01:47:15Z",
         "op_sys": "Android",
         "priority": "P2",
         "severity": "S3",
@@ -15218,7 +15172,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-02T14:01:38Z",
+        "last_change_time": "2026-11-06T01:46:46Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15235,7 +15189,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-02T16:32:52Z",
+        "last_change_time": "2026-11-06T14:05:49Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15259,22 +15213,6 @@
         "summary": "1.26% speedometer3 Editor-TipTap/total (Linux) regression on Sun November 1 2026"
       },
       {
-        "component": "DOM: Navigation",
-        "creation_time": "2026-11-03T10:09:35Z",
-        "id": 2088400,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-05T08:44:24Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "3.52 - 1.57% speedometer3 TodoMVC-jQuery/total + 1 more (OSX) regression on Sat October 31 2026"
-      },
-      {
         "component": "Composition",
         "creation_time": "2026-11-03T12:25:50Z",
         "id": 2088451,
@@ -15291,22 +15229,6 @@
         "summary": "7.54 - 2.1% google-mail ContentfulSpeedIndex + 2 more (Linux) regression on Wed October 28 2026"
       },
       {
-        "component": "Performance",
-        "creation_time": "2026-11-03T13:21:34Z",
-        "id": 2088467,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-05T09:26:34Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "9.72% speedometer3 cpuTime (Windows) regression on Mon November 2 2026"
-      },
-      {
         "component": "Telemetry",
         "creation_time": "2026-11-03T15:12:01Z",
         "id": 2088520,
@@ -15316,7 +15238,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-03T15:56:41Z",
+        "last_change_time": "2026-11-06T01:46:49Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15349,7 +15271,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-06T00:06:33Z",
+        "last_change_time": "2026-11-06T22:58:53Z",
         "op_sys": "Unspecified",
         "priority": "P1",
         "severity": "S3",
@@ -15365,12 +15287,91 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-05T13:24:09Z",
+        "last_change_time": "2026-11-06T01:47:40Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "60.65 - 20.79% fandom FirstVisualChange + 7 more (Linux, OSX) regression on Sat October 31 2026"
+      },
+      {
+        "component": "Graphics: WebRender",
+        "creation_time": "2026-11-06T12:13:01Z",
+        "id": 2090044,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-06T12:43:59Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "12.59 - 1.17% reddit-billgates-post-2.billg PerceptualSpeedIndex + 3 more (Linux, OSX) regression on Wed November 4 2026"
+      },
+      {
+        "component": "Security: PSM",
+        "creation_time": "2026-11-06T12:34:27Z",
+        "id": 2090049,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-06T12:44:06Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "47.6 - 1.49% upload upload-goodput + 33 more (Linux, Windows) regression on Wed November 4 2026"
+      },
+      {
+        "component": "Privacy: Anti-Tracking",
+        "creation_time": "2026-11-06T12:37:38Z",
+        "id": 2090050,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-06T12:44:02Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "4.96 - 4.18% vpl-av1 secondFrame + 1 more (Linux) regression on Mon November 2 2026"
+      },
+      {
+        "component": "DOM: Content Processes",
+        "creation_time": "2026-11-06T12:39:00Z",
+        "id": 2090051,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-06T16:23:12Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "167.24 - 4.81% media-capabilities encode-webrtc-video-vp8-hot + 23 more (Windows) regression on Tue November 3 2026"
+      },
+      {
+        "component": "Toolchains",
+        "creation_time": "2026-11-06T16:32:20Z",
+        "id": 2090214,
+        "keywords": [
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-06T17:44:53Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "62.5 - 53.42% compiler_metrics num_static_constructors + 1 more (Windows) regression on Fri November 6 2026"
       }
     ]
   },
@@ -16092,7 +16093,7 @@
         "creation_time": "2026-10-02T08:25:01Z",
         "id": 2077430,
         "keywords": [],
-        "last_change_time": "2026-11-01T16:58:29Z",
+        "last_change_time": "2026-11-06T12:12:38Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16104,7 +16105,7 @@
         "creation_time": "2026-10-06T12:51:03Z",
         "id": 2078601,
         "keywords": [],
-        "last_change_time": "2026-10-30T14:54:29Z",
+        "last_change_time": "2026-11-06T12:12:44Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "--",
@@ -16231,7 +16232,7 @@
         "creation_time": "2026-10-26T11:08:42Z",
         "id": 2085754,
         "keywords": [],
-        "last_change_time": "2026-10-30T13:19:45Z",
+        "last_change_time": "2026-11-06T12:12:56Z",
         "op_sys": "Linux",
         "priority": "--",
         "severity": "--",
@@ -16282,7 +16283,7 @@
         "creation_time": "2026-11-04T08:22:54Z",
         "id": 2088781,
         "keywords": [],
-        "last_change_time": "2026-11-04T15:29:18Z",
+        "last_change_time": "2026-11-06T12:25:57Z",
         "op_sys": "Windows 10",
         "priority": "--",
         "severity": "--",
@@ -16294,12 +16295,74 @@
         "creation_time": "2026-11-04T14:20:15Z",
         "id": 2088918,
         "keywords": [],
-        "last_change_time": "2026-11-04T15:17:50Z",
+        "last_change_time": "2026-11-06T12:25:59Z",
         "op_sys": "Android",
         "priority": "P3",
         "severity": "S3",
         "status": "NEW",
         "summary": "www.projectnomad.us - Scrolling causes the page content to disappear on Android"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-06T14:17:44Z",
+        "id": 2090083,
+        "keywords": [
+          "webcompat:site-report"
+        ],
+        "last_change_time": "2026-11-06T15:34:09Z",
+        "op_sys": "macOS",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "store.google.com - Unresponsive or very slow when browsing the page"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-06T18:41:24Z",
+        "id": 2090267,
+        "keywords": [],
+        "last_change_time": "2026-11-06T19:29:47Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Perma RuntimeError: profiler-edit exited with status 2147483651."
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-06T21:22:56Z",
+        "id": 2090321,
+        "keywords": [],
+        "last_change_time": "2026-11-06T21:22:56Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Attaching allocation ICs in a very large function takes quadratic time (seen on YouTube page load)"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-06T21:43:39Z",
+        "id": 2090327,
+        "keywords": [],
+        "last_change_time": "2026-11-06T22:50:48Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Google Docs and Slides compile their large script-inserted bundles on the main thread on every load"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-06T22:50:47Z",
+        "id": 2090337,
+        "keywords": [],
+        "last_change_time": "2026-11-06T22:50:47Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "On macOS, failed `local()` font lookups block the main thread and are repeated on every page load (Google Docs and Slides)"
       }
     ]
   },
@@ -17658,7 +17721,7 @@
         "creation_time": "2026-09-08T20:14:41Z",
         "id": 2070343,
         "keywords": [],
-        "last_change_time": "2026-10-27T18:19:25Z",
+        "last_change_time": "2026-11-06T01:39:48Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "S3",
@@ -17796,18 +17859,6 @@
         "severity": "--",
         "status": "UNCONFIRMED",
         "summary": "Firefox memory use on OSX causing out of memory issue"
-      },
-      {
-        "component": "Performance: Memory",
-        "creation_time": "2026-10-29T20:32:09Z",
-        "id": 2087264,
-        "keywords": [],
-        "last_change_time": "2026-10-30T10:35:09Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "UNCONFIRMED",
-        "summary": "Ghost windows from github.com pages survive \"Minimize memory usage\" and grow the content process to 1-3 GB"
       },
       {
         "component": "Performance: Memory",
