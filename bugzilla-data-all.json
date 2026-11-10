@@ -75,7 +75,7 @@
           "perf:resource-use",
           "reproducible"
         ],
-        "last_change_time": "2026-10-28T14:49:06Z",
+        "last_change_time": "2026-11-09T08:39:10Z",
         "op_sys": "Unspecified",
         "priority": "P2",
         "severity": "S3",
@@ -3099,7 +3099,7 @@
           "perf:resource-use",
           "perf:responsiveness"
         ],
-        "last_change_time": "2026-07-23T15:41:28Z",
+        "last_change_time": "2026-11-09T11:01:22Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "S3",
@@ -11896,6 +11896,18 @@
         "summary": "www.owlbear.rodeo - Slight lag/delay when rolling with the dice (Dice+ extension installed on a room at owlbear.rodeo)"
       },
       {
+        "component": "Graphics: WebRender",
+        "creation_time": "2026-10-06T12:51:03Z",
+        "id": 2078601,
+        "keywords": [],
+        "last_change_time": "2026-11-09T14:34:56Z",
+        "op_sys": "Android",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "rathodmax.com - Scrolling is slow and laggy on Android"
+      },
+      {
         "component": "JavaScript Engine",
         "creation_time": "2015-12-31T22:36:47Z",
         "id": 1236104,
@@ -13465,7 +13477,7 @@
           "webcompat:needs-diagnosis",
           "webcompat:site-report"
         ],
-        "last_change_time": "2026-11-05T19:33:26Z",
+        "last_change_time": "2026-11-09T18:39:50Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "S3",
@@ -13511,7 +13523,7 @@
           "memory-footprint",
           "perf"
         ],
-        "last_change_time": "2026-11-01T10:12:25Z",
+        "last_change_time": "2026-11-09T20:10:04Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -13529,6 +13541,32 @@
         "severity": "S3",
         "status": "UNCONFIRMED",
         "summary": "Quota Manager performance degradation after clearing cookies"
+      },
+      {
+        "component": "Top Sites",
+        "creation_time": "2026-11-09T21:12:19Z",
+        "id": 2091117,
+        "keywords": [
+          "perf"
+        ],
+        "last_change_time": "2026-11-09T21:13:15Z",
+        "op_sys": "Android",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Reduce CPU time spent processing the merino manifest on the first favicon request"
+      },
+      {
+        "component": "DOM: Workers",
+        "creation_time": "2026-11-09T21:38:14Z",
+        "id": 2091119,
+        "keywords": [],
+        "last_change_time": "2026-11-09T21:38:14Z",
+        "op_sys": "All",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "The main thread blocks during worker creation, on Nightly for worker debugging"
       }
     ]
   },
@@ -15140,7 +15178,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-06T01:47:42Z",
+        "last_change_time": "2026-11-09T16:04:30Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15156,7 +15194,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-06T01:47:15Z",
+        "last_change_time": "2026-11-09T16:11:40Z",
         "op_sys": "Android",
         "priority": "P2",
         "severity": "S3",
@@ -15197,23 +15235,7 @@
         "summary": "4.54 - 3.7% damp console.log-in-loop-content-process-string + 15 more (Linux, OSX) regression on Tue October 27 2026"
       },
       {
-        "component": "Add-ons Manager",
-        "creation_time": "2026-11-03T10:06:10Z",
-        "id": 2088396,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-07T08:07:12Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "1.26% speedometer3 Editor-TipTap/total (Linux) regression on Sun November 1 2026"
-      },
-      {
-        "component": "Composition",
+        "component": "Layout: Text and Fonts",
         "creation_time": "2026-11-03T12:25:50Z",
         "id": 2088451,
         "keywords": [
@@ -15221,29 +15243,12 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-03T18:39:26Z",
+        "last_change_time": "2026-11-09T10:44:07Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "7.54 - 2.1% google-mail ContentfulSpeedIndex + 2 more (Linux) regression on Wed October 28 2026"
-      },
-      {
-        "component": "Telemetry",
-        "creation_time": "2026-11-03T15:12:01Z",
-        "id": 2088520,
-        "keywords": [
-          "devtools-perf-regression",
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-06T01:46:49Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "56.58 - 2.05% damp complicated.styleeditor.reload.DAMP + 10 more (Windows) regression on Wed October 28 2026"
       },
       {
         "component": "JavaScript Engine: JIT",
@@ -15255,7 +15260,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-07T20:42:58Z",
+        "last_change_time": "2026-11-09T16:18:04Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15271,7 +15276,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-06T22:58:53Z",
+        "last_change_time": "2026-11-09T20:37:11Z",
         "op_sys": "Unspecified",
         "priority": "P1",
         "severity": "S3",
@@ -15287,7 +15292,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-06T01:47:40Z",
+        "last_change_time": "2026-11-09T16:23:58Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15311,22 +15316,6 @@
         "summary": "12.59 - 1.17% reddit-billgates-post-2.billg PerceptualSpeedIndex + 3 more (Linux, OSX) regression on Wed November 4 2026"
       },
       {
-        "component": "Security: PSM",
-        "creation_time": "2026-11-06T12:34:27Z",
-        "id": 2090049,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-07T02:21:52Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "47.6 - 1.49% upload upload-goodput + 33 more (Linux, Windows) regression on Wed November 4 2026"
-      },
-      {
         "component": "Privacy: Anti-Tracking",
         "creation_time": "2026-11-06T12:37:38Z",
         "id": 2090050,
@@ -15335,10 +15324,10 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-06T12:44:02Z",
+        "last_change_time": "2026-11-09T16:27:50Z",
         "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
+        "priority": "P2",
+        "severity": "S3",
         "status": "NEW",
         "summary": "4.96 - 4.18% vpl-av1 secondFrame + 1 more (Linux) regression on Mon November 2 2026"
       },
@@ -15351,7 +15340,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-07T02:21:16Z",
+        "last_change_time": "2026-11-09T16:28:24Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15366,12 +15355,78 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-06T17:44:53Z",
+        "last_change_time": "2026-11-09T10:12:52Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "62.5 - 53.42% compiler_metrics num_static_constructors + 1 more (Windows) regression on Fri November 6 2026"
+      },
+      {
+        "component": "Toolchains",
+        "creation_time": "2026-11-09T09:55:03Z",
+        "id": 2090871,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-09T11:06:58Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "7.83 - 1.01% jetstream3 first-inspector-code-load-First + 13 more (OSX, Windows) regression on Fri November 6 2026"
+      },
+      {
+        "component": "Graphics: CanvasWebGL",
+        "creation_time": "2026-11-09T13:30:41Z",
+        "id": 2090939,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-09T13:44:08Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "39.34 - 24.83% offscreencanvas_webcodecs_main_webgl_vp9 offscreencanvas_webcodecs_main_webgl_vp9 Mean time across 100 frames:  + 1 more (OSX) regression on Fri November 6 2026"
+      },
+      {
+        "component": "Toolchains",
+        "creation_time": "2026-11-09T15:21:45Z",
+        "id": 2090985,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-09T15:21:45Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "15.96 - 4.58% browser_removeManySpellingErrors.js A11Y_TotalTime + 2 more (Windows) regression on Fri November 6 2026"
+      },
+      {
+        "component": "Toolchains",
+        "creation_time": "2026-11-09T15:36:16Z",
+        "id": 2090995,
+        "keywords": [
+          "devtools-perf-regression",
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-09T15:36:16Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "6.74 - 2.01% damp jstracer.profiler-recording-performance.DAMP + 11 more (Windows) regression on Fri November 6 2026"
       }
     ]
   },
@@ -16081,7 +16136,7 @@
           "webcompat:needs-diagnosis",
           "webcompat:site-report"
         ],
-        "last_change_time": "2026-11-05T19:33:26Z",
+        "last_change_time": "2026-11-09T18:39:50Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "S3",
@@ -16093,36 +16148,12 @@
         "creation_time": "2026-10-02T08:25:01Z",
         "id": 2077430,
         "keywords": [],
-        "last_change_time": "2026-11-08T09:27:56Z",
+        "last_change_time": "2026-11-09T14:14:23Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "UNCONFIRMED",
         "summary": "Unexpected Touchpad Cursor Movement CPU FAN getting high While Using Firefox"
-      },
-      {
-        "component": "Performance: General",
-        "creation_time": "2026-10-06T12:51:03Z",
-        "id": 2078601,
-        "keywords": [],
-        "last_change_time": "2026-11-06T12:12:44Z",
-        "op_sys": "Android",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "rathodmax.com - Scrolling is slow and laggy on Android"
-      },
-      {
-        "component": "Performance: General",
-        "creation_time": "2026-10-06T18:21:54Z",
-        "id": 2078869,
-        "keywords": [],
-        "last_change_time": "2026-10-19T12:29:56Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "UNCONFIRMED",
-        "summary": "Firefox versions 157.1 and later freeze on certain websites such as Heise, while earlier versions and other browsers work normally."
       },
       {
         "component": "Downloads Panel",
@@ -16259,7 +16290,7 @@
           "memory-footprint",
           "perf"
         ],
-        "last_change_time": "2026-11-01T10:12:25Z",
+        "last_change_time": "2026-11-09T20:10:04Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16307,9 +16338,10 @@
         "creation_time": "2026-11-06T14:17:44Z",
         "id": 2090083,
         "keywords": [
+          "webcompat:needs-diagnosis",
           "webcompat:site-report"
         ],
-        "last_change_time": "2026-11-07T08:32:32Z",
+        "last_change_time": "2026-11-09T16:15:08Z",
         "op_sys": "macOS",
         "priority": "--",
         "severity": "--",
@@ -16321,7 +16353,7 @@
         "creation_time": "2026-11-06T18:41:24Z",
         "id": 2090267,
         "keywords": [],
-        "last_change_time": "2026-11-06T19:29:47Z",
+        "last_change_time": "2026-11-09T06:30:02Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16333,7 +16365,7 @@
         "creation_time": "2026-11-06T21:22:56Z",
         "id": 2090321,
         "keywords": [],
-        "last_change_time": "2026-11-07T02:18:34Z",
+        "last_change_time": "2026-11-09T23:51:20Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16363,6 +16395,32 @@
         "severity": "--",
         "status": "NEW",
         "summary": "On macOS, failed `local()` font lookups block the main thread and are repeated on every page load (Google Docs and Slides)"
+      },
+      {
+        "component": "Top Sites",
+        "creation_time": "2026-11-09T21:12:19Z",
+        "id": 2091117,
+        "keywords": [
+          "perf"
+        ],
+        "last_change_time": "2026-11-09T21:13:15Z",
+        "op_sys": "Android",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Reduce CPU time spent processing the merino manifest on the first favicon request"
+      },
+      {
+        "component": "DOM: Workers",
+        "creation_time": "2026-11-09T21:38:14Z",
+        "id": 2091119,
+        "keywords": [],
+        "last_change_time": "2026-11-09T21:38:14Z",
+        "op_sys": "All",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "The main thread blocks during worker creation, on Nightly for worker debugging"
       }
     ]
   },
@@ -17215,7 +17273,7 @@
         "creation_time": "2025-11-16T02:23:41Z",
         "id": 2000414,
         "keywords": [],
-        "last_change_time": "2026-11-07T08:13:29Z",
+        "last_change_time": "2026-11-09T10:11:49Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -17745,7 +17803,7 @@
         "creation_time": "2026-09-19T19:59:58Z",
         "id": 2073821,
         "keywords": [],
-        "last_change_time": "2026-10-19T12:22:20Z",
+        "last_change_time": "2026-11-09T12:20:57Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -17895,6 +17953,30 @@
         "severity": "--",
         "status": "UNCONFIRMED",
         "summary": "Memory leak in smart-shortcuts-rv3"
+      },
+      {
+        "component": "Performance: Memory",
+        "creation_time": "2026-11-09T09:59:18Z",
+        "id": 2090873,
+        "keywords": [],
+        "last_change_time": "2026-11-09T10:16:41Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "ASSIGNED",
+        "summary": "Avoid quadratic work when building the select dropdown option list in the content process"
+      },
+      {
+        "component": "Performance: Memory",
+        "creation_time": "2026-11-09T09:59:48Z",
+        "id": 2090874,
+        "keywords": [],
+        "last_change_time": "2026-11-09T10:00:12Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "ASSIGNED",
+        "summary": "Don't check every child when updating arrowscrollbox scroll button state"
       }
     ]
   },
@@ -17923,18 +18005,6 @@
         "severity": "S3",
         "status": "NEW",
         "summary": "With Fenix already launched: ~120ms delay between applink intent receipt and LoadURI"
-      },
-      {
-        "component": "Performance: Navigation",
-        "creation_time": "2026-11-03T15:50:28Z",
-        "id": 2088555,
-        "keywords": [],
-        "last_change_time": "2026-11-04T19:57:59Z",
-        "op_sys": "Unspecified",
-        "priority": "P3",
-        "severity": "S3",
-        "status": "ASSIGNED",
-        "summary": "Remove the duplicate first contentful paint histogram `performance.time.to_first_contentful_paint`"
       }
     ]
   },
