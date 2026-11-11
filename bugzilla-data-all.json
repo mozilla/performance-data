@@ -295,7 +295,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2023-05-15T19:04:00Z",
+        "last_change_time": "2026-11-10T21:38:20Z",
         "op_sys": "All",
         "priority": "--",
         "severity": "S3",
@@ -4124,7 +4124,7 @@
         "keywords": [
           "perf:responsiveness"
         ],
-        "last_change_time": "2022-10-24T11:19:14Z",
+        "last_change_time": "2026-11-10T21:03:57Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "S3",
@@ -4306,7 +4306,7 @@
         "creation_time": "2025-01-18T22:30:52Z",
         "id": 1942478,
         "keywords": [],
-        "last_change_time": "2025-09-19T06:22:39Z",
+        "last_change_time": "2026-11-10T10:03:25Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "S3",
@@ -4896,7 +4896,7 @@
           "regression",
           "testcase"
         ],
-        "last_change_time": "2025-04-05T10:12:20Z",
+        "last_change_time": "2026-11-10T21:21:51Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -13376,7 +13376,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-05-25T16:28:10Z",
+        "last_change_time": "2026-11-10T14:33:25Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -13477,7 +13477,7 @@
           "webcompat:needs-diagnosis",
           "webcompat:site-report"
         ],
-        "last_change_time": "2026-11-09T18:39:50Z",
+        "last_change_time": "2026-11-10T19:33:10Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "S3",
@@ -15145,7 +15145,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-04T18:59:21Z",
+        "last_change_time": "2026-11-10T08:07:01Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15178,7 +15178,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-09T16:04:30Z",
+        "last_change_time": "2026-11-10T13:46:29Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15202,22 +15202,6 @@
         "summary": "9.25 - 2.17% vpl-h264 estimatedAnyFrameLatency + 4 more (Android) regression on Tue October 27 2026"
       },
       {
-        "component": "Gecko Profiler",
-        "creation_time": "2026-10-30T15:52:09Z",
-        "id": 2087545,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-06T01:46:46Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "107.31 - 6.98% welcome powerUsage_cpu_cores + 17 more (Windows) regression on Wed October 28 2026"
-      },
-      {
         "component": "DOM: Core & HTML",
         "creation_time": "2026-11-02T11:31:23Z",
         "id": 2088019,
@@ -15227,7 +15211,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-06T14:05:49Z",
+        "last_change_time": "2026-11-10T14:39:11Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15268,38 +15252,6 @@
         "summary": "17.24 - 16.52% dromaeo_dom + 1 more (Linux) regression on Wed October 28 2026"
       },
       {
-        "component": "Security: PSM",
-        "creation_time": "2026-11-04T16:33:29Z",
-        "id": 2088996,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-09T20:37:11Z",
-        "op_sys": "Unspecified",
-        "priority": "P1",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "21.42 - 2.03% nav-bench-overall google-nav-load-score + 16 more (Linux, OSX, Windows) regression on Sat October 31 2026"
-      },
-      {
-        "component": "DOM: Navigation",
-        "creation_time": "2026-11-05T13:24:09Z",
-        "id": 2089534,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-09T16:23:58Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "60.65 - 20.79% fandom FirstVisualChange + 7 more (Linux, OSX) regression on Sat October 31 2026"
-      },
-      {
         "component": "Graphics: WebRender",
         "creation_time": "2026-11-06T12:13:01Z",
         "id": 2090044,
@@ -15324,28 +15276,12 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-09T16:27:50Z",
+        "last_change_time": "2026-11-10T09:16:19Z",
         "op_sys": "Unspecified",
         "priority": "P2",
         "severity": "S3",
-        "status": "NEW",
+        "status": "ASSIGNED",
         "summary": "4.96 - 4.18% vpl-av1 secondFrame + 1 more (Linux) regression on Mon November 2 2026"
-      },
-      {
-        "component": "DOM: Content Processes",
-        "creation_time": "2026-11-06T12:39:00Z",
-        "id": 2090051,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-09T16:28:24Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "167.24 - 4.81% media-capabilities encode-webrtc-video-vp8-hot + 23 more (Windows) regression on Tue November 3 2026"
       },
       {
         "component": "Toolchains",
@@ -15388,7 +15324,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-09T13:44:08Z",
+        "last_change_time": "2026-11-10T15:30:36Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15427,6 +15363,123 @@
         "severity": "--",
         "status": "NEW",
         "summary": "6.74 - 2.01% damp jstracer.profiler-recording-performance.DAMP + 11 more (Windows) regression on Fri November 6 2026"
+      },
+      {
+        "component": "General",
+        "creation_time": "2026-11-10T10:18:23Z",
+        "id": 2091324,
+        "keywords": [
+          "devtools-perf-regression",
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-10T16:52:23Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "11.02 - 2.16% damp custom.jsdebugger.stepOut.DAMP + 6 more (OSX) regression on Wed November 4 2026"
+      },
+      {
+        "component": "PDF Viewer",
+        "creation_time": "2026-11-10T13:27:31Z",
+        "id": 2091391,
+        "keywords": [
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-10T18:03:54Z",
+        "op_sys": "Unspecified",
+        "priority": "P1",
+        "severity": "S3",
+        "status": "ASSIGNED",
+        "summary": "0.18% installer size (Windows) regression on Fri November 6 2026"
+      },
+      {
+        "component": "Toolchains",
+        "creation_time": "2026-11-10T13:50:12Z",
+        "id": 2091397,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-10T13:50:12Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "11.92 - 3.7% perf_reftest_singletons link-style-cache-1.html + 7 more (OSX, Windows) regression on Fri November 6 2026"
+      },
+      {
+        "component": "PDF Viewer",
+        "creation_time": "2026-11-10T13:56:28Z",
+        "id": 2091402,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-10T14:44:54Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "101.99 - 6.02% pdfpaint_main_hwa perf_text_standard14.pdf + 28 more (Linux, OSX, Windows) regression on Fri November 6 2026"
+      },
+      {
+        "component": "Debugger",
+        "creation_time": "2026-11-10T14:30:07Z",
+        "id": 2091416,
+        "keywords": [
+          "devtools-perf-regression",
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-10T15:44:42Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "2.55% reload-debugger:content-process objects-with-stacks (Linux) regression on Fri November 6 2026"
+      },
+      {
+        "component": "Cycle Collector",
+        "creation_time": "2026-11-10T14:35:26Z",
+        "id": 2091417,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-10T15:05:52Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "9.06% perf_reftest_singletons line-iterator.html (OSX) regression on Fri November 6 2026"
+      },
+      {
+        "component": "PDF Viewer",
+        "creation_time": "2026-11-10T14:51:19Z",
+        "id": 2091429,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-10T15:44:37Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "16.91 - 13.94% pdfpaint bug1791583.pdf + 1 more (Linux, Windows) regression on Thu November 5 2026"
       }
     ]
   },
@@ -15843,7 +15896,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-05-25T16:28:10Z",
+        "last_change_time": "2026-11-10T14:33:25Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -16136,7 +16189,7 @@
           "webcompat:needs-diagnosis",
           "webcompat:site-report"
         ],
-        "last_change_time": "2026-11-09T18:39:50Z",
+        "last_change_time": "2026-11-10T19:33:10Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "S3",
@@ -16148,7 +16201,7 @@
         "creation_time": "2026-10-02T08:25:01Z",
         "id": 2077430,
         "keywords": [],
-        "last_change_time": "2026-11-09T14:14:23Z",
+        "last_change_time": "2026-11-10T20:26:18Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16326,7 +16379,7 @@
         "creation_time": "2026-11-04T14:20:15Z",
         "id": 2088918,
         "keywords": [],
-        "last_change_time": "2026-11-06T12:25:59Z",
+        "last_change_time": "2026-11-10T13:40:06Z",
         "op_sys": "Android",
         "priority": "P3",
         "severity": "S3",
@@ -16341,7 +16394,7 @@
           "webcompat:needs-diagnosis",
           "webcompat:site-report"
         ],
-        "last_change_time": "2026-11-09T16:15:08Z",
+        "last_change_time": "2026-11-10T17:49:55Z",
         "op_sys": "macOS",
         "priority": "--",
         "severity": "--",
@@ -16365,11 +16418,11 @@
         "creation_time": "2026-11-06T21:22:56Z",
         "id": 2090321,
         "keywords": [],
-        "last_change_time": "2026-11-09T23:51:20Z",
+        "last_change_time": "2026-11-10T20:35:21Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
-        "status": "NEW",
+        "status": "ASSIGNED",
         "summary": "Attaching allocation ICs in a very large function takes quadratic time (seen on YouTube page load)"
       },
       {
@@ -17917,6 +17970,18 @@
         "severity": "--",
         "status": "UNCONFIRMED",
         "summary": "Firefox memory use on OSX causing out of memory issue"
+      },
+      {
+        "component": "Performance: Memory",
+        "creation_time": "2026-10-28T05:14:54Z",
+        "id": 2086441,
+        "keywords": [],
+        "last_change_time": "2026-11-10T15:28:34Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "UNCONFIRMED",
+        "summary": "Sudden explosion in memory usage after random tab refresh"
       },
       {
         "component": "Performance: Memory",
