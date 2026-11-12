@@ -13561,7 +13561,7 @@
         "creation_time": "2026-11-09T21:38:14Z",
         "id": 2091119,
         "keywords": [],
-        "last_change_time": "2026-11-09T21:38:14Z",
+        "last_change_time": "2026-11-11T02:38:27Z",
         "op_sys": "All",
         "priority": "--",
         "severity": "--",
@@ -15202,23 +15202,6 @@
         "summary": "9.25 - 2.17% vpl-h264 estimatedAnyFrameLatency + 4 more (Android) regression on Tue October 27 2026"
       },
       {
-        "component": "DOM: Core & HTML",
-        "creation_time": "2026-11-02T11:31:23Z",
-        "id": 2088019,
-        "keywords": [
-          "devtools-perf-regression",
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-10T14:39:11Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "4.54 - 3.7% damp console.log-in-loop-content-process-string + 15 more (Linux, OSX) regression on Tue October 27 2026"
-      },
-      {
         "component": "Layout: Text and Fonts",
         "creation_time": "2026-11-03T12:25:50Z",
         "id": 2088451,
@@ -15276,7 +15259,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-10T09:16:19Z",
+        "last_change_time": "2026-11-11T14:50:11Z",
         "op_sys": "Unspecified",
         "priority": "P2",
         "severity": "S3",
@@ -15406,7 +15389,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-10T13:50:12Z",
+        "last_change_time": "2026-11-11T02:35:55Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15423,11 +15406,11 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-10T14:44:54Z",
+        "last_change_time": "2026-11-11T17:16:30Z",
         "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
+        "priority": "P1",
+        "severity": "S3",
+        "status": "ASSIGNED",
         "summary": "101.99 - 6.02% pdfpaint_main_hwa perf_text_standard14.pdf + 28 more (Linux, OSX, Windows) regression on Fri November 6 2026"
       },
       {
@@ -15457,7 +15440,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-10T15:05:52Z",
+        "last_change_time": "2026-11-11T13:29:42Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15465,21 +15448,21 @@
         "summary": "9.06% perf_reftest_singletons line-iterator.html (OSX) regression on Fri November 6 2026"
       },
       {
-        "component": "PDF Viewer",
-        "creation_time": "2026-11-10T14:51:19Z",
-        "id": 2091429,
+        "component": "DOM: Core & HTML",
+        "creation_time": "2026-11-11T16:14:45Z",
+        "id": 2091772,
         "keywords": [
           "perf",
           "perf-alert",
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-10T15:44:37Z",
+        "last_change_time": "2026-11-11T16:44:46Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
-        "summary": "16.91 - 13.94% pdfpaint bug1791583.pdf + 1 more (Linux, Windows) regression on Thu November 5 2026"
+        "summary": "3.74% glterrain (OSX) regression on Fri November 6 2026"
       }
     ]
   },
@@ -16201,7 +16184,7 @@
         "creation_time": "2026-10-02T08:25:01Z",
         "id": 2077430,
         "keywords": [],
-        "last_change_time": "2026-11-10T20:26:18Z",
+        "last_change_time": "2026-11-11T07:22:46Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16468,7 +16451,7 @@
         "creation_time": "2026-11-09T21:38:14Z",
         "id": 2091119,
         "keywords": [],
-        "last_change_time": "2026-11-09T21:38:14Z",
+        "last_change_time": "2026-11-11T02:38:27Z",
         "op_sys": "All",
         "priority": "--",
         "severity": "--",
