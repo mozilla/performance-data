@@ -289,6 +289,18 @@
         "summary": "js::jit::GenerateCode spends a lot of time in malloc lock contention"
       },
       {
+        "component": "JavaScript Engine",
+        "creation_time": "2025-12-01T16:45:51Z",
+        "id": 2003299,
+        "keywords": [],
+        "last_change_time": "2026-11-12T06:14:45Z",
+        "op_sys": "Unspecified",
+        "priority": "P3",
+        "severity": "S4",
+        "status": "ASSIGNED",
+        "summary": "toBase64 is very slow"
+      },
+      {
         "component": "Layout",
         "creation_time": "2003-08-17T03:26:28Z",
         "id": 216418,
@@ -822,7 +834,7 @@
         "creation_time": "2018-09-12T22:46:57Z",
         "id": 1490849,
         "keywords": [],
-        "last_change_time": "2026-09-03T07:01:31Z",
+        "last_change_time": "2026-11-12T22:06:43Z",
         "op_sys": "Unspecified",
         "priority": "P2",
         "severity": "N/A",
@@ -3725,18 +3737,6 @@
         "severity": "S3",
         "status": "NEW",
         "summary": "www.arthurvasseur.fr - Freezes/Stutters slightly when scrolling the page due to large data:-URL in faviconUrl in tabs.onUpdated"
-      },
-      {
-        "component": "JavaScript Engine",
-        "creation_time": "2025-12-01T16:45:51Z",
-        "id": 2003299,
-        "keywords": [],
-        "last_change_time": "2025-12-10T20:55:46Z",
-        "op_sys": "Unspecified",
-        "priority": "P3",
-        "severity": "S4",
-        "status": "NEW",
-        "summary": "toBase64 is very slow"
       },
       {
         "component": "JavaScript Engine",
@@ -13469,22 +13469,6 @@
         "summary": "Updating aria-selected while a tabpanel is removed from the DOM destroys ~5,700 accessibles at ~48µs each, blocking the main thread ~280ms per tab switch"
       },
       {
-        "component": "Graphics: WebRender",
-        "creation_time": "2026-09-24T12:36:42Z",
-        "id": 2075222,
-        "keywords": [
-          "webcompat:contact-ready",
-          "webcompat:needs-diagnosis",
-          "webcompat:site-report"
-        ],
-        "last_change_time": "2026-11-10T19:33:10Z",
-        "op_sys": "Android",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "very slow performance on Gemini main page"
-      },
-      {
         "component": "Downloads Panel",
         "creation_time": "2026-10-07T11:48:09Z",
         "id": 2079239,
@@ -13534,13 +13518,15 @@
         "component": "Storage: Quota Manager",
         "creation_time": "2026-10-29T11:02:59Z",
         "id": 2087018,
-        "keywords": [],
-        "last_change_time": "2026-11-05T14:54:32Z",
+        "keywords": [
+          "regression"
+        ],
+        "last_change_time": "2026-11-12T11:34:56Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
         "status": "UNCONFIRMED",
-        "summary": "Quota Manager performance degradation after clearing cookies"
+        "summary": "Quota Manager performance degradation after clicking shield icon in the address bar"
       },
       {
         "component": "Top Sites",
@@ -15162,7 +15148,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-06T01:47:48Z",
+        "last_change_time": "2026-11-12T09:12:33Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15267,37 +15253,6 @@
         "summary": "4.96 - 4.18% vpl-av1 secondFrame + 1 more (Linux) regression on Mon November 2 2026"
       },
       {
-        "component": "Toolchains",
-        "creation_time": "2026-11-06T16:32:20Z",
-        "id": 2090214,
-        "keywords": [
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-09T10:12:52Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "62.5 - 53.42% compiler_metrics num_static_constructors + 1 more (Windows) regression on Fri November 6 2026"
-      },
-      {
-        "component": "Toolchains",
-        "creation_time": "2026-11-09T09:55:03Z",
-        "id": 2090871,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-09T11:06:58Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "7.83 - 1.01% jetstream3 first-inspector-code-load-First + 13 more (OSX, Windows) regression on Fri November 6 2026"
-      },
-      {
         "component": "Graphics: CanvasWebGL",
         "creation_time": "2026-11-09T13:30:41Z",
         "id": 2090939,
@@ -15389,7 +15344,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-11T02:35:55Z",
+        "last_change_time": "2026-11-12T17:57:57Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15431,38 +15386,54 @@
         "summary": "2.55% reload-debugger:content-process objects-with-stacks (Linux) regression on Fri November 6 2026"
       },
       {
-        "component": "Cycle Collector",
-        "creation_time": "2026-11-10T14:35:26Z",
-        "id": 2091417,
+        "component": "Graphics",
+        "creation_time": "2026-11-12T08:46:53Z",
+        "id": 2091973,
         "keywords": [
           "perf",
           "perf-alert",
-          "regression",
-          "talos-regression"
+          "regression"
         ],
-        "last_change_time": "2026-11-11T13:29:42Z",
+        "last_change_time": "2026-11-12T23:58:19Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
-        "summary": "9.06% perf_reftest_singletons line-iterator.html (OSX) regression on Fri November 6 2026"
+        "summary": "11.69 - 2.36% speedometer3 cpuTime + 2 more (Android) regression on Tue November 10 2026"
       },
       {
-        "component": "DOM: Core & HTML",
-        "creation_time": "2026-11-11T16:14:45Z",
-        "id": 2091772,
+        "component": "Debugger",
+        "creation_time": "2026-11-12T09:23:53Z",
+        "id": 2091984,
+        "keywords": [
+          "devtools-perf-regression",
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-12T09:44:24Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "2.55% reload-debugger:content-process objects-with-stacks (Linux) regression on Tue November 10 2026"
+      },
+      {
+        "component": "PDF Viewer",
+        "creation_time": "2026-11-12T19:54:15Z",
+        "id": 2092255,
         "keywords": [
           "perf",
           "perf-alert",
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-11T16:44:46Z",
+        "last_change_time": "2026-11-12T20:44:27Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
-        "summary": "3.74% glterrain (OSX) regression on Fri November 6 2026"
+        "summary": "8% perf_reftest_singletons remove-front-has-pseudo.html (Windows) regression on Thu November 5 2026"
       }
     ]
   },
@@ -16164,22 +16135,6 @@
         "summary": "crazyshooters.com: WebGL game lagging despite enabling javascript.options.asmjs"
       },
       {
-        "component": "Graphics: WebRender",
-        "creation_time": "2026-09-24T12:36:42Z",
-        "id": 2075222,
-        "keywords": [
-          "webcompat:contact-ready",
-          "webcompat:needs-diagnosis",
-          "webcompat:site-report"
-        ],
-        "last_change_time": "2026-11-10T19:33:10Z",
-        "op_sys": "Android",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "very slow performance on Gemini main page"
-      },
-      {
         "component": "Performance: General",
         "creation_time": "2026-10-02T08:25:01Z",
         "id": 2077430,
@@ -16337,13 +16292,15 @@
         "component": "Storage: Quota Manager",
         "creation_time": "2026-10-29T11:02:59Z",
         "id": 2087018,
-        "keywords": [],
-        "last_change_time": "2026-11-05T14:54:32Z",
+        "keywords": [
+          "regression"
+        ],
+        "last_change_time": "2026-11-12T11:34:56Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
         "status": "UNCONFIRMED",
-        "summary": "Quota Manager performance degradation after clearing cookies"
+        "summary": "Quota Manager performance degradation after clicking shield icon in the address bar"
       },
       {
         "component": "Performance: General",
@@ -16457,6 +16414,48 @@
         "severity": "--",
         "status": "NEW",
         "summary": "The main thread blocks during worker creation, on Nightly for worker debugging"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-12T23:09:08Z",
+        "id": 2092338,
+        "keywords": [
+          "perf"
+        ],
+        "last_change_time": "2026-11-12T23:54:25Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Map.prototype.delete is ~50x slower than Chrome when unfinished Map iterators exist (LRU cache eviction)"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-12T23:34:45Z",
+        "id": 2092351,
+        "keywords": [
+          "perf"
+        ],
+        "last_change_time": "2026-11-12T23:34:45Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Namespace import of a large `export *` barrel module takes seconds to minutes (Chrome/node: milliseconds)"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-12T23:54:25Z",
+        "id": 2092360,
+        "keywords": [
+          "perf"
+        ],
+        "last_change_time": "2026-11-12T23:54:25Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Property delete is ~300x slower than V8 when many for-in loops are suspended in generators or async functions"
       }
     ]
   },
@@ -17959,7 +17958,7 @@
         "creation_time": "2026-10-28T05:14:54Z",
         "id": 2086441,
         "keywords": [],
-        "last_change_time": "2026-11-10T15:28:34Z",
+        "last_change_time": "2026-11-12T12:23:22Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
