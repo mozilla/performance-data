@@ -10907,7 +10907,7 @@
         "creation_time": "2024-02-19T09:20:23Z",
         "id": 1880794,
         "keywords": [],
-        "last_change_time": "2026-11-05T14:55:20Z",
+        "last_change_time": "2026-11-13T10:40:32Z",
         "op_sys": "Windows",
         "priority": "P2",
         "severity": "S3",
@@ -13521,7 +13521,7 @@
         "keywords": [
           "regression"
         ],
-        "last_change_time": "2026-11-12T11:34:56Z",
+        "last_change_time": "2026-11-13T09:28:56Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15074,6 +15074,22 @@
         "summary": "1141.78 - 8.96% ve-h264-rt-sd-cam avc1.42001E (annexb) camera realtime encode - frame-to-frame cv (non key) + 37 more (OSX, Windows) regression on Wed August 26 2026"
       },
       {
+        "component": "Memory Allocator",
+        "creation_time": "2026-09-09T16:49:20Z",
+        "id": 2070617,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-14T00:07:36Z",
+        "op_sys": "Unspecified",
+        "priority": "P1",
+        "severity": "S2",
+        "status": "REOPENED",
+        "summary": "17.71 - 3.52% browser_translations_perf_tiny.js post-gc-inference-process-memory-usage + 57 more (Linux, OSX, Windows) regression on Tue September 1 2026"
+      },
+      {
         "component": "Homepage",
         "creation_time": "2026-09-18T12:37:52Z",
         "id": 2073467,
@@ -15188,22 +15204,6 @@
         "summary": "9.25 - 2.17% vpl-h264 estimatedAnyFrameLatency + 4 more (Android) regression on Tue October 27 2026"
       },
       {
-        "component": "Layout: Text and Fonts",
-        "creation_time": "2026-11-03T12:25:50Z",
-        "id": 2088451,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-09T10:44:07Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "7.54 - 2.1% google-mail ContentfulSpeedIndex + 2 more (Linux) regression on Wed October 28 2026"
-      },
-      {
         "component": "JavaScript Engine: JIT",
         "creation_time": "2026-11-04T06:45:12Z",
         "id": 2088763,
@@ -15229,10 +15229,10 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-08T18:57:58Z",
+        "last_change_time": "2026-11-13T14:37:31Z",
         "op_sys": "Unspecified",
         "priority": "--",
-        "severity": "--",
+        "severity": "S3",
         "status": "NEW",
         "summary": "12.59 - 1.17% reddit-billgates-post-2.billg PerceptualSpeedIndex + 3 more (Linux, OSX) regression on Wed November 4 2026"
       },
@@ -15262,10 +15262,10 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-10T15:30:36Z",
+        "last_change_time": "2026-11-13T19:37:38Z",
         "op_sys": "Unspecified",
         "priority": "--",
-        "severity": "--",
+        "severity": "S3",
         "status": "NEW",
         "summary": "39.34 - 24.83% offscreencanvas_webcodecs_main_webgl_vp9 offscreencanvas_webcodecs_main_webgl_vp9 Mean time across 100 frames:  + 1 more (OSX) regression on Fri November 6 2026"
       },
@@ -15278,7 +15278,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-09T15:21:45Z",
+        "last_change_time": "2026-11-13T08:06:37Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15295,7 +15295,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-09T15:36:16Z",
+        "last_change_time": "2026-11-13T08:06:39Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15394,7 +15394,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-12T23:58:19Z",
+        "last_change_time": "2026-11-13T00:41:32Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15417,23 +15417,6 @@
         "severity": "--",
         "status": "NEW",
         "summary": "2.55% reload-debugger:content-process objects-with-stacks (Linux) regression on Tue November 10 2026"
-      },
-      {
-        "component": "PDF Viewer",
-        "creation_time": "2026-11-12T19:54:15Z",
-        "id": 2092255,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-12T20:44:27Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "8% perf_reftest_singletons remove-front-has-pseudo.html (Windows) regression on Thu November 5 2026"
       }
     ]
   },
@@ -16295,7 +16278,7 @@
         "keywords": [
           "regression"
         ],
-        "last_change_time": "2026-11-12T11:34:56Z",
+        "last_change_time": "2026-11-13T09:28:56Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -16355,18 +16338,6 @@
       },
       {
         "component": "Performance: General",
-        "creation_time": "2026-11-06T21:22:56Z",
-        "id": 2090321,
-        "keywords": [],
-        "last_change_time": "2026-11-10T20:35:21Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "ASSIGNED",
-        "summary": "Attaching allocation ICs in a very large function takes quadratic time (seen on YouTube page load)"
-      },
-      {
-        "component": "Performance: General",
         "creation_time": "2026-11-06T21:43:39Z",
         "id": 2090327,
         "keywords": [],
@@ -16422,7 +16393,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-11-12T23:54:25Z",
+        "last_change_time": "2026-11-13T02:20:00Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16436,7 +16407,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-11-12T23:34:45Z",
+        "last_change_time": "2026-11-13T02:19:53Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16450,12 +16421,40 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-11-12T23:54:25Z",
+        "last_change_time": "2026-11-13T17:01:13Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "Property delete is ~300x slower than V8 when many for-in loops are suspended in generators or async functions"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-13T00:27:23Z",
+        "id": 2092369,
+        "keywords": [
+          "perf"
+        ],
+        "last_change_time": "2026-11-13T02:16:40Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Toggling a class matched inside :has() costs time proportional to the number of descendants (~55x slower than Chrome at 40k)"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-13T00:27:55Z",
+        "id": 2092370,
+        "keywords": [
+          "perf"
+        ],
+        "last_change_time": "2026-11-13T02:15:57Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "setTimeout gets slower with each pending timer when delays are not increasing (Chrome: constant)"
       }
     ]
   },
@@ -17958,7 +17957,7 @@
         "creation_time": "2026-10-28T05:14:54Z",
         "id": 2086441,
         "keywords": [],
-        "last_change_time": "2026-11-12T12:23:22Z",
+        "last_change_time": "2026-11-13T04:41:26Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
