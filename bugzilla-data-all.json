@@ -10907,7 +10907,7 @@
         "creation_time": "2024-02-19T09:20:23Z",
         "id": 1880794,
         "keywords": [],
-        "last_change_time": "2026-11-13T10:40:32Z",
+        "last_change_time": "2026-11-14T16:56:30Z",
         "op_sys": "Windows",
         "priority": "P2",
         "severity": "S3",
@@ -15074,22 +15074,6 @@
         "summary": "1141.78 - 8.96% ve-h264-rt-sd-cam avc1.42001E (annexb) camera realtime encode - frame-to-frame cv (non key) + 37 more (OSX, Windows) regression on Wed August 26 2026"
       },
       {
-        "component": "Memory Allocator",
-        "creation_time": "2026-09-09T16:49:20Z",
-        "id": 2070617,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-14T00:07:36Z",
-        "op_sys": "Unspecified",
-        "priority": "P1",
-        "severity": "S2",
-        "status": "REOPENED",
-        "summary": "17.71 - 3.52% browser_translations_perf_tiny.js post-gc-inference-process-memory-usage + 57 more (Linux, OSX, Windows) regression on Tue September 1 2026"
-      },
-      {
         "component": "Homepage",
         "creation_time": "2026-09-18T12:37:52Z",
         "id": 2073467,
@@ -15147,7 +15131,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-10T08:07:01Z",
+        "last_change_time": "2026-11-14T08:06:30Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15180,7 +15164,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-10T13:46:29Z",
+        "last_change_time": "2026-11-14T08:06:32Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15270,39 +15254,6 @@
         "summary": "39.34 - 24.83% offscreencanvas_webcodecs_main_webgl_vp9 offscreencanvas_webcodecs_main_webgl_vp9 Mean time across 100 frames:  + 1 more (OSX) regression on Fri November 6 2026"
       },
       {
-        "component": "Toolchains",
-        "creation_time": "2026-11-09T15:21:45Z",
-        "id": 2090985,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-13T08:06:37Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "15.96 - 4.58% browser_removeManySpellingErrors.js A11Y_TotalTime + 2 more (Windows) regression on Fri November 6 2026"
-      },
-      {
-        "component": "Toolchains",
-        "creation_time": "2026-11-09T15:36:16Z",
-        "id": 2090995,
-        "keywords": [
-          "devtools-perf-regression",
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-13T08:06:39Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "6.74 - 2.01% damp jstracer.profiler-recording-performance.DAMP + 11 more (Windows) regression on Fri November 6 2026"
-      },
-      {
         "component": "General",
         "creation_time": "2026-11-10T10:18:23Z",
         "id": 2091324,
@@ -15335,23 +15286,6 @@
         "summary": "0.18% installer size (Windows) regression on Fri November 6 2026"
       },
       {
-        "component": "Toolchains",
-        "creation_time": "2026-11-10T13:50:12Z",
-        "id": 2091397,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-12T17:57:57Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "11.92 - 3.7% perf_reftest_singletons link-style-cache-1.html + 7 more (OSX, Windows) regression on Fri November 6 2026"
-      },
-      {
         "component": "PDF Viewer",
         "creation_time": "2026-11-10T13:56:28Z",
         "id": 2091402,
@@ -15378,7 +15312,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-10T15:44:42Z",
+        "last_change_time": "2026-11-14T08:06:34Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15417,6 +15351,22 @@
         "severity": "--",
         "status": "NEW",
         "summary": "2.55% reload-debugger:content-process objects-with-stacks (Linux) regression on Tue November 10 2026"
+      },
+      {
+        "component": "Graphics: WebRender",
+        "creation_time": "2026-11-14T05:58:05Z",
+        "id": 2092830,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-14T08:05:23Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "7.79% stackoverflow SpeedIndex (Android) regression on Sat November 7 2026"
       }
     ]
   },
@@ -16989,18 +16939,6 @@
         "severity": "--",
         "status": "NEW",
         "summary": "Rapid memory growth on https://observablehq.com/d/a741f9a27e8c0e73. And almost all of it is heap-unclassified (d3.js)"
-      },
-      {
-        "component": "Performance: Memory",
-        "creation_time": "2025-04-10T01:49:06Z",
-        "id": 1959569,
-        "keywords": [],
-        "last_change_time": "2026-09-28T12:26:40Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "UNCONFIRMED",
-        "summary": "Firefox uses 1.5 GB of RAM with only two tabs open in Windows 11, and causes frequent hangs."
       },
       {
         "component": "Performance: Memory",
