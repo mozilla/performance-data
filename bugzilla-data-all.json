@@ -15213,7 +15213,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-13T14:37:31Z",
+        "last_change_time": "2026-11-15T19:30:11Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "S3",
@@ -15318,22 +15318,6 @@
         "severity": "--",
         "status": "NEW",
         "summary": "2.55% reload-debugger:content-process objects-with-stacks (Linux) regression on Fri November 6 2026"
-      },
-      {
-        "component": "Graphics",
-        "creation_time": "2026-11-12T08:46:53Z",
-        "id": 2091973,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-13T00:41:32Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "11.69 - 2.36% speedometer3 cpuTime + 2 more (Android) regression on Tue November 10 2026"
       },
       {
         "component": "Debugger",
@@ -16343,7 +16327,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-11-13T02:20:00Z",
+        "last_change_time": "2026-11-15T07:23:30Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16371,7 +16355,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-11-13T17:01:13Z",
+        "last_change_time": "2026-11-15T07:23:42Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
