@@ -120,7 +120,7 @@
           "perf",
           "perf:responsiveness"
         ],
-        "last_change_time": "2026-10-15T20:17:50Z",
+        "last_change_time": "2026-11-16T14:44:17Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -4381,7 +4381,7 @@
           "hang",
           "perf"
         ],
-        "last_change_time": "2026-10-20T17:20:56Z",
+        "last_change_time": "2026-11-16T14:29:42Z",
         "op_sys": "Unspecified",
         "priority": "P2",
         "severity": "S2",
@@ -10500,7 +10500,7 @@
           "reporter-external",
           "sec-low"
         ],
-        "last_change_time": "2026-04-13T10:42:48Z",
+        "last_change_time": "2026-11-16T19:36:18Z",
         "op_sys": "Unspecified",
         "priority": "P2",
         "severity": "S3",
@@ -13553,6 +13553,20 @@
         "severity": "--",
         "status": "NEW",
         "summary": "The main thread blocks during worker creation, on Nightly for worker debugging"
+      },
+      {
+        "component": "Performance",
+        "creation_time": "2026-11-13T04:07:12Z",
+        "id": 2092413,
+        "keywords": [
+          "wayland"
+        ],
+        "last_change_time": "2026-11-16T20:00:40Z",
+        "op_sys": "Linux",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Firefox consistently, but periodically, stutters (at differing intervals), during media play-back, when utilising the KWin Wayland back-end, but not with KWin XWayland."
       }
     ]
   },
@@ -15050,7 +15064,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-10-20T07:32:02Z",
+        "last_change_time": "2026-11-16T07:56:40Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "S3",
@@ -15164,10 +15178,10 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-14T08:06:32Z",
+        "last_change_time": "2026-11-16T16:13:40Z",
         "op_sys": "Unspecified",
         "priority": "--",
-        "severity": "--",
+        "severity": "S3",
         "status": "NEW",
         "summary": "86.57 - 7.2% wikipedia largestContentfulPaint + 5 more (Linux, OSX) regression on Fri October 23 2026"
       },
@@ -15213,7 +15227,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-15T19:30:11Z",
+        "last_change_time": "2026-11-16T20:15:04Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "S3",
@@ -15237,23 +15251,6 @@
         "summary": "4.96 - 4.18% vpl-av1 secondFrame + 1 more (Linux) regression on Mon November 2 2026"
       },
       {
-        "component": "Graphics: CanvasWebGL",
-        "creation_time": "2026-11-09T13:30:41Z",
-        "id": 2090939,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-13T19:37:38Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "39.34 - 24.83% offscreencanvas_webcodecs_main_webgl_vp9 offscreencanvas_webcodecs_main_webgl_vp9 Mean time across 100 frames:  + 1 more (OSX) regression on Fri November 6 2026"
-      },
-      {
         "component": "General",
         "creation_time": "2026-11-10T10:18:23Z",
         "id": 2091324,
@@ -15263,7 +15260,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-10T16:52:23Z",
+        "last_change_time": "2026-11-16T16:13:15Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15329,7 +15326,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-12T09:44:24Z",
+        "last_change_time": "2026-11-16T16:32:09Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15345,12 +15342,142 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-14T08:05:23Z",
+        "last_change_time": "2026-11-16T11:12:35Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "7.79% stackoverflow SpeedIndex (Android) regression on Sat November 7 2026"
+      },
+      {
+        "component": "Performance",
+        "creation_time": "2026-11-16T08:36:24Z",
+        "id": 2093258,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-16T08:44:36Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "87.15 - 86.01% tp5n nonmain_normal_fileio + 1 more (Windows) regression on Mon November 9 2026"
+      },
+      {
+        "component": "PDF Viewer",
+        "creation_time": "2026-11-16T12:03:12Z",
+        "id": 2093310,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-16T21:11:01Z",
+        "op_sys": "Unspecified",
+        "priority": "P1",
+        "severity": "S3",
+        "status": "ASSIGNED",
+        "summary": "22.87 - 15.9% pdfpaint_main_hwa perf_patterns_tiling_colored.pdf + 3 more (Linux) regression on Sat November 7 2026"
+      },
+      {
+        "component": "General",
+        "creation_time": "2026-11-16T12:15:23Z",
+        "id": 2093313,
+        "keywords": [
+          "devtools-perf-regression",
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-16T20:23:32Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "9.63 - 5.47% damp custom.jsdebugger.stepOut.DAMP + 1 more (OSX) regression on Mon November 9 2026"
+      },
+      {
+        "component": "CSS Parsing and Computation",
+        "creation_time": "2026-11-16T13:18:24Z",
+        "id": 2093338,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-16T16:45:28Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "2.56 - 0.94% speedometer3 NewsSite-Next/total + 9 more (Linux, OSX, Windows) regression on Fri November 13 2026"
+      },
+      {
+        "component": "Memory Allocator",
+        "creation_time": "2026-11-16T13:20:39Z",
+        "id": 2093340,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-16T15:43:06Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "3.79 - 0.67% speedometer3 TodoMVC-jQuery/total + 21 more (Linux, Windows) regression on Sat November 14 2026"
+      },
+      {
+        "component": "Graphics: WebRender",
+        "creation_time": "2026-11-16T13:21:52Z",
+        "id": 2093345,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-16T15:43:02Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "4.24 - 1.21% speedometer3 Charts-observable-plot/total + 12 more (Android, Linux, OSX, Windows) regression on Thu November 12 2026"
+      },
+      {
+        "component": "Widget: Cocoa",
+        "creation_time": "2026-11-16T13:31:44Z",
+        "id": 2093364,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-16T23:45:55Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "15.61 - 6.65% google-slides SpeedIndex + 2 more (OSX) regression on Tue November 10 2026"
+      },
+      {
+        "component": "PDF Viewer",
+        "creation_time": "2026-11-16T17:48:49Z",
+        "id": 2093581,
+        "keywords": [
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-16T19:44:27Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "0.51 - 0.48% installer size + 1 more (Linux) regression on Sat November 14 2026"
       }
     ]
   },
@@ -15717,7 +15844,7 @@
         "creation_time": "2026-05-01T22:37:58Z",
         "id": 2036471,
         "keywords": [],
-        "last_change_time": "2026-10-26T12:22:44Z",
+        "last_change_time": "2026-11-16T12:20:41Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16032,7 +16159,7 @@
         "creation_time": "2026-09-20T21:01:36Z",
         "id": 2073933,
         "keywords": [],
-        "last_change_time": "2026-10-28T12:24:44Z",
+        "last_change_time": "2026-11-16T12:21:08Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16263,7 +16390,7 @@
         "creation_time": "2026-11-06T18:41:24Z",
         "id": 2090267,
         "keywords": [],
-        "last_change_time": "2026-11-09T06:30:02Z",
+        "last_change_time": "2026-11-16T06:29:52Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16319,6 +16446,18 @@
         "severity": "--",
         "status": "NEW",
         "summary": "The main thread blocks during worker creation, on Nightly for worker debugging"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-11T15:31:18Z",
+        "id": 2091759,
+        "keywords": [],
+        "last_change_time": "2026-11-16T16:43:28Z",
+        "op_sys": "Android",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "www.youtube.com - Big lag/buffer in playing video on 2x ,1.5x,1.25x at every resolution"
       },
       {
         "component": "Performance: General",
@@ -16389,6 +16528,20 @@
         "severity": "--",
         "status": "NEW",
         "summary": "setTimeout gets slower with each pending timer when delays are not increasing (Chrome: constant)"
+      },
+      {
+        "component": "Performance",
+        "creation_time": "2026-11-13T04:07:12Z",
+        "id": 2092413,
+        "keywords": [
+          "wayland"
+        ],
+        "last_change_time": "2026-11-16T20:00:40Z",
+        "op_sys": "Linux",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Firefox consistently, but periodically, stutters (at differing intervals), during media play-back, when utilising the KWin Wayland back-end, but not with KWin XWayland."
       }
     ]
   },
@@ -17831,7 +17984,7 @@
         "creation_time": "2026-10-13T21:56:39Z",
         "id": 2081492,
         "keywords": [],
-        "last_change_time": "2026-10-23T17:10:43Z",
+        "last_change_time": "2026-11-16T12:20:50Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -17915,7 +18068,7 @@
         "creation_time": "2026-11-02T21:18:19Z",
         "id": 2088262,
         "keywords": [],
-        "last_change_time": "2026-11-04T12:23:45Z",
+        "last_change_time": "2026-11-16T19:07:28Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
