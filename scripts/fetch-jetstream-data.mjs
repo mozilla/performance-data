@@ -48,7 +48,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function fetchJson(url, retries = 3) {
+async function fetchJson(url, retries = 5) {
   let lastError;
 
   for (let attempt = 0; attempt <= retries; attempt++) {
@@ -78,7 +78,7 @@ async function fetchJson(url, retries = 3) {
       }
     }
 
-    await sleep(1000 * 2 ** attempt);
+    await sleep(Math.min(15000 * 2 ** attempt, 60000));
   }
 
   throw lastError;

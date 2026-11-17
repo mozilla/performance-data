@@ -80,4 +80,10 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add bugzilla-data-medium.json bugzilla-data-low.json bugzilla-data-high.json bugzilla-data-untriaged.json bugzilla-data-needinfo.json bugzilla-data-all.json bugzilla-data-regressions.json bugzilla-data-triage-general.json bugzilla-data-triage-memory.json bugzilla-data-triage-navigation.json bugzilla-data-triage-responsiveness.json bugzilla-data-triage-startup.json
         git commit -m "Update Bugzilla data"
-        git push
+        for attempt in 1 2 3 4 5; do
+          if git pull --rebase && git push; then
+            exit 0
+          fi
+          sleep $((attempt * 15))
+        done
+        exit 1

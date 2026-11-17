@@ -40,4 +40,10 @@ jobs:
           exit 0
         fi
         git commit -m "Update Jetstream3 data cache"
-        git push
+        for attempt in 1 2 3 4 5; do
+          if git pull --rebase && git push; then
+            exit 0
+          fi
+          sleep $((attempt * 15))
+        done
+        exit 1

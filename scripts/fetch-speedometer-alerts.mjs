@@ -73,7 +73,7 @@ function sleep(ms) {
 }
 
 async function fetchJson(url, options = {}) {
-  const retries = options.retries ?? 3;
+  const retries = options.retries ?? 5;
   let lastError;
 
   for (let attempt = 0; attempt <= retries; attempt++) {
@@ -103,7 +103,7 @@ async function fetchJson(url, options = {}) {
       }
     }
 
-    await sleep(1000 * 2 ** attempt);
+    await sleep(Math.min(15000 * 2 ** attempt, 60000));
   }
 
   throw lastError;
