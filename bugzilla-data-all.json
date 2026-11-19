@@ -15162,7 +15162,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-12T09:12:33Z",
+        "last_change_time": "2026-11-18T11:22:45Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15292,7 +15292,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-16T11:12:35Z",
+        "last_change_time": "2026-11-18T11:07:18Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15351,22 +15351,6 @@
         "summary": "9.63 - 5.47% damp custom.jsdebugger.stepOut.DAMP + 1 more (OSX) regression on Mon November 9 2026"
       },
       {
-        "component": "CSS Parsing and Computation",
-        "creation_time": "2026-11-16T13:18:24Z",
-        "id": 2093338,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-17T22:29:33Z",
-        "op_sys": "Unspecified",
-        "priority": "P2",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "2.56 - 0.94% speedometer3 NewsSite-Next/total + 9 more (Linux, OSX, Windows) regression on Fri November 13 2026"
-      },
-      {
         "component": "Memory Allocator",
         "creation_time": "2026-11-16T13:20:39Z",
         "id": 2093340,
@@ -15375,7 +15359,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-17T12:56:43Z",
+        "last_change_time": "2026-11-18T03:42:24Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15397,21 +15381,6 @@
         "severity": "--",
         "status": "NEW",
         "summary": "4.24 - 1.21% speedometer3 Charts-observable-plot/total + 12 more (Android, Linux, OSX, Windows) regression on Thu November 12 2026"
-      },
-      {
-        "component": "PDF Viewer",
-        "creation_time": "2026-11-16T17:48:49Z",
-        "id": 2093581,
-        "keywords": [
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-16T19:44:27Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "0.51 - 0.48% installer size + 1 more (Linux) regression on Sat November 14 2026"
       },
       {
         "component": "General",
@@ -15446,22 +15415,6 @@
         "summary": "6.58 - 3.83% google-slides FirstVisualChange + 2 more (Linux) regression on Thu November 12 2026"
       },
       {
-        "component": "DOM: Navigation",
-        "creation_time": "2026-11-17T09:59:48Z",
-        "id": 2094018,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-17T20:16:43Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "0.8% speedometer3 perfstats-MinorGC + 1 more (OSX) regression on Fri November 13 2026"
-      },
-      {
         "component": "Graphics: WebRender",
         "creation_time": "2026-11-17T10:10:06Z",
         "id": 2094023,
@@ -15471,7 +15424,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-17T21:26:03Z",
+        "last_change_time": "2026-11-18T15:48:41Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15487,7 +15440,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-17T11:44:24Z",
+        "last_change_time": "2026-11-18T21:13:48Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15504,29 +15457,12 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-17T13:45:06Z",
+        "last_change_time": "2026-11-18T03:42:46Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "56.53 - 5.75% perf_reftest_singletons inline-style-cache-1.html + 4 more (Linux, Windows) regression on Sat November 14 2026"
-      },
-      {
-        "component": "JavaScript: GC",
-        "creation_time": "2026-11-17T13:18:17Z",
-        "id": 2094105,
-        "keywords": [
-          "devtools-perf-regression",
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-17T13:45:04Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "12.37 - 2.04% damp custom.jsdebugger.project-search.DAMP + 15 more (Linux, OSX, Windows) regression on Wed November 11 2026"
       },
       {
         "component": "Raptor",
@@ -16517,7 +16453,7 @@
         "creation_time": "2026-11-11T15:31:18Z",
         "id": 2091759,
         "keywords": [],
-        "last_change_time": "2026-11-16T16:43:28Z",
+        "last_change_time": "2026-11-18T14:55:06Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "--",
@@ -16607,6 +16543,18 @@
         "severity": "--",
         "status": "NEW",
         "summary": "Firefox consistently, but periodically, stutters (at differing intervals), during media play-back, when utilising the KWin Wayland back-end, but not with KWin XWayland."
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-18T14:56:30Z",
+        "id": 2094650,
+        "keywords": [],
+        "last_change_time": "2026-11-18T17:52:20Z",
+        "op_sys": "Linux",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "app.meteo.pl - Performance issues with NVIDIA GPU"
       }
     ]
   },
@@ -18163,6 +18111,18 @@
         "severity": "--",
         "status": "ASSIGNED",
         "summary": "Don't check every child when updating arrowscrollbox scroll button state"
+      },
+      {
+        "component": "Performance: Memory",
+        "creation_time": "2026-11-18T01:31:59Z",
+        "id": 2094438,
+        "keywords": [],
+        "last_change_time": "2026-11-18T01:43:20Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "UNCONFIRMED",
+        "summary": "firefoxcp isolated web content leaking memory on macos, consuming as high as 70+gb of swap"
       }
     ]
   },
