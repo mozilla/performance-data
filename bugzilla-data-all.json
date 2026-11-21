@@ -13184,7 +13184,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-10-03T16:12:20Z",
+        "last_change_time": "2026-11-20T06:10:22Z",
         "op_sys": "Windows 11",
         "priority": "--",
         "severity": "S2",
@@ -13376,7 +13376,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-11-10T14:33:25Z",
+        "last_change_time": "2026-11-20T08:00:00Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15145,7 +15145,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-14T08:06:30Z",
+        "last_change_time": "2026-11-20T08:05:54Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15162,7 +15162,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-18T11:22:45Z",
+        "last_change_time": "2026-11-20T10:41:42Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15244,7 +15244,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-19T16:59:16Z",
+        "last_change_time": "2026-11-20T06:43:39Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15259,7 +15259,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-19T14:46:22Z",
+        "last_change_time": "2026-11-20T19:05:36Z",
         "op_sys": "Unspecified",
         "priority": "P1",
         "severity": "S3",
@@ -15317,23 +15317,6 @@
         "summary": "87.15 - 86.01% tp5n nonmain_normal_fileio + 1 more (Windows) regression on Mon November 9 2026"
       },
       {
-        "component": "General",
-        "creation_time": "2026-11-16T12:15:23Z",
-        "id": 2093313,
-        "keywords": [
-          "devtools-perf-regression",
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-19T14:47:16Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "9.63 - 5.47% damp custom.jsdebugger.stepOut.DAMP + 1 more (OSX) regression on Mon November 9 2026"
-      },
-      {
         "component": "Memory Allocator",
         "creation_time": "2026-11-16T13:20:39Z",
         "id": 2093340,
@@ -15374,10 +15357,10 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-17T13:41:19Z",
+        "last_change_time": "2026-11-20T16:12:37Z",
         "op_sys": "Android",
         "priority": "--",
-        "severity": "--",
+        "severity": "S3",
         "status": "NEW",
         "summary": "2.44 - 1.42% speedometer3 Charts-chartjs/total + 2 more (Android) regression on Mon November 9 2026"
       },
@@ -15473,7 +15456,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-19T21:32:13Z",
+        "last_change_time": "2026-11-20T19:23:21Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15496,6 +15479,69 @@
         "severity": "--",
         "status": "NEW",
         "summary": "6.52% damp source-map.SourceMapGenerator-toString.DAMP (Windows) regression on Wed November 18 2026"
+      },
+      {
+        "component": "Graphics",
+        "creation_time": "2026-11-20T10:04:21Z",
+        "id": 2095506,
+        "keywords": [
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-20T22:09:43Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "498.43 - 309.16% compiler warnings + 5 more (Android) regression on Fri November 20 2026"
+      },
+      {
+        "component": "IPC",
+        "creation_time": "2026-11-20T11:58:08Z",
+        "id": 2095529,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-20T20:10:17Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "ASSIGNED",
+        "summary": "29.24 - 8.54% background-resource rss-tab-start + 23 more (Android) regression on Wed November 18 2026"
+      },
+      {
+        "component": "Layout",
+        "creation_time": "2026-11-20T14:23:16Z",
+        "id": 2095584,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-20T14:44:22Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "50.84 - 24.41% Base Content Heap Unclassified + 1 more (OSX) regression on Wed November 18 2026"
+      },
+      {
+        "component": "JavaScript Engine: JIT",
+        "creation_time": "2026-11-20T15:37:52Z",
+        "id": 2095646,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-20T21:23:46Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "6.85% six-speed-sm six-speed-spread-literal-es6 (Linux) regression on Wed November 11 2026"
       }
     ]
   },
@@ -15524,7 +15570,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-10-03T16:12:20Z",
+        "last_change_time": "2026-11-20T06:10:22Z",
         "op_sys": "Windows 11",
         "priority": "--",
         "severity": "S2",
@@ -15912,7 +15958,7 @@
         "keywords": [
           "perf"
         ],
-        "last_change_time": "2026-11-10T14:33:25Z",
+        "last_change_time": "2026-11-20T08:00:00Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -16316,7 +16362,7 @@
         "creation_time": "2026-10-26T11:08:42Z",
         "id": 2085754,
         "keywords": [],
-        "last_change_time": "2026-11-06T12:12:56Z",
+        "last_change_time": "2026-11-20T18:13:51Z",
         "op_sys": "Linux",
         "priority": "--",
         "severity": "--",
@@ -16566,12 +16612,26 @@
         "creation_time": "2026-11-18T14:56:30Z",
         "id": 2094650,
         "keywords": [],
-        "last_change_time": "2026-11-18T17:52:20Z",
+        "last_change_time": "2026-11-20T12:21:06Z",
         "op_sys": "Linux",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "app.meteo.pl - Performance issues with NVIDIA GPU"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-20T23:12:47Z",
+        "id": 2095813,
+        "keywords": [
+          "telemetry-alert"
+        ],
+        "last_change_time": "2026-11-20T23:17:49Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Telemetry Alert for perf_largest_contentful_paint on 2026-09-30"
       }
     ]
   },
