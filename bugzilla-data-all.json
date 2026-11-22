@@ -15341,7 +15341,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-17T01:14:37Z",
+        "last_change_time": "2026-11-21T08:07:18Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15447,23 +15447,6 @@
         "summary": "44.16 - 10.37% welcome FirstVisualChange + 9 more (Linux) regression on Tue November 17 2026"
       },
       {
-        "component": "Tabbed Browser",
-        "creation_time": "2026-11-19T13:04:41Z",
-        "id": 2095080,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-20T19:23:21Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "ASSIGNED",
-        "summary": "4.14 - 3.28% twinopen ext+twinopen:twinopen.html + 2 more (Windows) regression on Mon November 16 2026"
-      },
-      {
         "component": "JavaScript: GC",
         "creation_time": "2026-11-19T14:52:34Z",
         "id": 2095107,
@@ -15479,21 +15462,6 @@
         "severity": "--",
         "status": "NEW",
         "summary": "6.52% damp source-map.SourceMapGenerator-toString.DAMP (Windows) regression on Wed November 18 2026"
-      },
-      {
-        "component": "Graphics",
-        "creation_time": "2026-11-20T10:04:21Z",
-        "id": 2095506,
-        "keywords": [
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-20T22:09:43Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "498.43 - 309.16% compiler warnings + 5 more (Android) regression on Fri November 20 2026"
       },
       {
         "component": "IPC",
@@ -15520,7 +15488,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-20T14:44:22Z",
+        "last_change_time": "2026-11-21T02:27:55Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16626,7 +16594,7 @@
         "keywords": [
           "telemetry-alert"
         ],
-        "last_change_time": "2026-11-20T23:17:49Z",
+        "last_change_time": "2026-11-21T18:11:36Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -18026,7 +17994,7 @@
         "creation_time": "2026-10-06T18:01:57Z",
         "id": 2078852,
         "keywords": [],
-        "last_change_time": "2026-11-02T19:52:29Z",
+        "last_change_time": "2026-11-21T14:44:41Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
