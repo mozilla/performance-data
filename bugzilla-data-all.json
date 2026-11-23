@@ -120,7 +120,7 @@
           "perf",
           "perf:responsiveness"
         ],
-        "last_change_time": "2026-11-17T21:45:49Z",
+        "last_change_time": "2026-11-23T00:05:02Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -13178,20 +13178,6 @@
         "summary": "Compositor CSS animations are not paused in fully occluded windows"
       },
       {
-        "component": "Disability Access APIs",
-        "creation_time": "2022-07-03T18:15:09Z",
-        "id": 1777875,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2026-11-20T06:10:22Z",
-        "op_sys": "Windows 11",
-        "priority": "--",
-        "severity": "S2",
-        "status": "NEW",
-        "summary": "Lenovo Privacy Guard with \"Enable this feature when typing passwords\" causing excessive UI responsiveness delays (jank)"
-      },
-      {
         "component": "Performance: General",
         "creation_time": "2024-08-04T02:59:11Z",
         "id": 1911450,
@@ -15292,10 +15278,10 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-19T14:47:33Z",
+        "last_change_time": "2026-11-22T18:56:34Z",
         "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
+        "priority": "P2",
+        "severity": "S3",
         "status": "NEW",
         "summary": "7.79% stackoverflow SpeedIndex (Android) regression on Sat November 7 2026"
       },
@@ -15480,22 +15466,6 @@
         "summary": "29.24 - 8.54% background-resource rss-tab-start + 23 more (Android) regression on Wed November 18 2026"
       },
       {
-        "component": "Layout",
-        "creation_time": "2026-11-20T14:23:16Z",
-        "id": 2095584,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-21T02:27:55Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "50.84 - 24.41% Base Content Heap Unclassified + 1 more (OSX) regression on Wed November 18 2026"
-      },
-      {
         "component": "JavaScript Engine: JIT",
         "creation_time": "2026-11-20T15:37:52Z",
         "id": 2095646,
@@ -15530,20 +15500,6 @@
         "severity": "S3",
         "status": "NEW",
         "summary": "Compositor CSS animations are not paused in fully occluded windows"
-      },
-      {
-        "component": "Disability Access APIs",
-        "creation_time": "2022-07-03T18:15:09Z",
-        "id": 1777875,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2026-11-20T06:10:22Z",
-        "op_sys": "Windows 11",
-        "priority": "--",
-        "severity": "S2",
-        "status": "NEW",
-        "summary": "Lenovo Privacy Guard with \"Enable this feature when typing passwords\" causing excessive UI responsiveness delays (jank)"
       },
       {
         "component": "Performance: General",
@@ -16484,7 +16440,7 @@
         "creation_time": "2026-11-11T15:31:18Z",
         "id": 2091759,
         "keywords": [],
-        "last_change_time": "2026-11-19T03:07:15Z",
+        "last_change_time": "2026-11-22T14:04:32Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "--",
