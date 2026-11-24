@@ -120,8 +120,8 @@
           "perf",
           "perf:responsiveness"
         ],
-        "last_change_time": "2026-11-23T00:05:02Z",
-        "op_sys": "Unspecified",
+        "last_change_time": "2026-11-23T15:28:37Z",
+        "op_sys": "All",
         "priority": "P3",
         "severity": "S3",
         "status": "NEW",
@@ -1779,10 +1779,10 @@
         "keywords": [
           "perf:startup"
         ],
-        "last_change_time": "2022-03-28T19:21:24Z",
+        "last_change_time": "2026-11-23T04:41:16Z",
         "op_sys": "Unspecified",
-        "priority": "P3",
-        "severity": "--",
+        "priority": "--",
+        "severity": "N/A",
         "status": "NEW",
         "summary": "600ms CreateFile on update.test on reference hardware during startup"
       },
@@ -4572,20 +4572,6 @@
         "summary": "IE10 Test Drive: ParticleAcceleration Canvas 2D demo is slow"
       },
       {
-        "component": "Networking",
-        "creation_time": "2012-10-19T21:25:22Z",
-        "id": 803709,
-        "keywords": [
-          "perf:resource-use"
-        ],
-        "last_change_time": "2023-06-05T16:31:57Z",
-        "op_sys": "All",
-        "priority": "P3",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "We appear to be copying large data URIs over and over in nsSimpleURI."
-      },
-      {
         "component": "PDF Viewer",
         "creation_time": "2012-11-09T08:29:30Z",
         "id": 810214,
@@ -4730,20 +4716,6 @@
         "severity": "S3",
         "status": "NEW",
         "summary": "Visibility state is not updated when the browser window is obscured or on another workspace"
-      },
-      {
-        "component": "Layout",
-        "creation_time": "2014-03-18T00:14:52Z",
-        "id": 984690,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2025-12-02T04:57:52Z",
-        "op_sys": "Linux",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "Optimize GetRootPresContext() to avoid going through the viewmanager / view tree"
       },
       {
         "component": "Toolbars and Customization",
@@ -4976,34 +4948,6 @@
         "summary": "Firefox 40+ are very sluggish through x2go"
       },
       {
-        "component": "Layout",
-        "creation_time": "2016-08-12T05:51:58Z",
-        "id": 1294625,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2026-06-10T12:53:35Z",
-        "op_sys": "Unspecified",
-        "priority": "P3",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "Try to tick refresh driver during html parsing"
-      },
-      {
-        "component": "Layout",
-        "creation_time": "2016-08-18T03:04:45Z",
-        "id": 1296161,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2022-10-11T18:31:41Z",
-        "op_sys": "Unspecified",
-        "priority": "P3",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "Measure and solve sync reflow for studying gdoc performance."
-      },
-      {
         "component": "Widget: Win32",
         "creation_time": "2016-10-01T23:51:50Z",
         "id": 1306925,
@@ -5031,20 +4975,6 @@
         "severity": "--",
         "status": "NEW",
         "summary": "for background tabs, break refresh driver tick into multiple events off the main thread's event loop"
-      },
-      {
-        "component": "JavaScript Engine",
-        "creation_time": "2016-11-11T14:41:11Z",
-        "id": 1316864,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2022-10-11T18:44:06Z",
-        "op_sys": "Windows 10",
-        "priority": "P5",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "Google Apps extremely slow -- scrolling, updating text, etc -- unusable"
       },
       {
         "component": "Bookmarks & History",
@@ -9127,7 +9057,7 @@
         "keywords": [
           "perf:resource-use"
         ],
-        "last_change_time": "2024-06-28T12:21:34Z",
+        "last_change_time": "2026-11-23T16:13:23Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -11908,20 +11838,6 @@
         "summary": "rathodmax.com - Scrolling is slow and laggy on Android"
       },
       {
-        "component": "JavaScript Engine",
-        "creation_time": "2015-12-31T22:36:47Z",
-        "id": 1236104,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2024-11-10T14:48:32Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "S3",
-        "status": "REOPENED",
-        "summary": "Allow scripts from pre-load cache to be off-thread compiled."
-      },
-      {
         "component": "JavaScript: GC",
         "creation_time": "2016-10-05T23:40:26Z",
         "id": 1308039,
@@ -13541,13 +13457,13 @@
         "summary": "The main thread blocks during worker creation, on Nightly for worker debugging"
       },
       {
-        "component": "Performance",
+        "component": "Audio/Video: Playback",
         "creation_time": "2026-11-13T04:07:12Z",
         "id": 2092413,
         "keywords": [
           "wayland"
         ],
-        "last_change_time": "2026-11-16T20:00:40Z",
+        "last_change_time": "2026-11-23T20:23:43Z",
         "op_sys": "Linux",
         "priority": "--",
         "severity": "--",
@@ -15082,7 +14998,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-19T21:46:06Z",
+        "last_change_time": "2026-11-23T16:27:53Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "S2",
@@ -15139,23 +15055,6 @@
         "summary": "2.49 - 2.38% browser_translations_perf_tiny.js post-gc-parent-process-memory-usage + 3 more (OSX) regression on Thu October 22 2026"
       },
       {
-        "component": "Performance",
-        "creation_time": "2026-10-28T07:50:04Z",
-        "id": 2086477,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-20T10:41:42Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "1013.33 - 2.5% perf_reftest nth-index-1.html + 30 more (Linux, OSX, Windows) regression on Thu October 22 2026"
-      },
-      {
         "component": "DOM: Navigation",
         "creation_time": "2026-10-28T10:06:37Z",
         "id": 2086522,
@@ -15205,22 +15104,6 @@
         "summary": "17.24 - 16.52% dromaeo_dom + 1 more (Linux) regression on Wed October 28 2026"
       },
       {
-        "component": "Privacy: Anti-Tracking",
-        "creation_time": "2026-11-06T12:37:38Z",
-        "id": 2090050,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-19T16:44:36Z",
-        "op_sys": "Unspecified",
-        "priority": "P2",
-        "severity": "S3",
-        "status": "ASSIGNED",
-        "summary": "4.96 - 4.18% vpl-av1 secondFrame + 1 more (Linux) regression on Mon November 2 2026"
-      },
-      {
         "component": "General",
         "creation_time": "2026-11-10T10:18:23Z",
         "id": 2091324,
@@ -15262,7 +15145,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-19T14:47:43Z",
+        "last_change_time": "2026-11-23T20:06:37Z",
         "op_sys": "Unspecified",
         "priority": "P1",
         "severity": "S3",
@@ -15327,28 +15210,12 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-21T08:07:18Z",
+        "last_change_time": "2026-11-23T11:48:51Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "4.24 - 1.21% speedometer3 Charts-observable-plot/total + 12 more (Android, Linux, OSX, Windows) regression on Thu November 12 2026"
-      },
-      {
-        "component": "General",
-        "creation_time": "2026-11-17T08:56:01Z",
-        "id": 2093974,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-20T16:12:37Z",
-        "op_sys": "Android",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "2.44 - 1.42% speedometer3 Charts-chartjs/total + 2 more (Android) regression on Mon November 9 2026"
       },
       {
         "component": "Performance",
@@ -15376,7 +15243,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-18T15:48:41Z",
+        "last_change_time": "2026-11-23T17:04:25Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15392,7 +15259,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-19T14:47:49Z",
+        "last_change_time": "2026-11-23T15:24:11Z",
         "op_sys": "Unspecified",
         "priority": "P2",
         "severity": "S3",
@@ -15425,45 +15292,12 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-19T20:08:09Z",
+        "last_change_time": "2026-11-23T18:33:37Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "44.16 - 10.37% welcome FirstVisualChange + 9 more (Linux) regression on Tue November 17 2026"
-      },
-      {
-        "component": "JavaScript: GC",
-        "creation_time": "2026-11-19T14:52:34Z",
-        "id": 2095107,
-        "keywords": [
-          "devtools-perf-regression",
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-19T16:25:21Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "6.52% damp source-map.SourceMapGenerator-toString.DAMP (Windows) regression on Wed November 18 2026"
-      },
-      {
-        "component": "IPC",
-        "creation_time": "2026-11-20T11:58:08Z",
-        "id": 2095529,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-20T20:10:17Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "ASSIGNED",
-        "summary": "29.24 - 8.54% background-resource rss-tab-start + 23 more (Android) regression on Wed November 18 2026"
       },
       {
         "component": "JavaScript Engine: JIT",
@@ -15474,12 +15308,61 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-20T21:23:46Z",
+        "last_change_time": "2026-11-23T15:07:55Z",
+        "op_sys": "Unspecified",
+        "priority": "P3",
+        "severity": "S3",
+        "status": "NEW",
+        "summary": "6.85% six-speed-sm six-speed-spread-literal-es6 (Linux) regression on Wed November 11 2026"
+      },
+      {
+        "component": "Networking",
+        "creation_time": "2026-11-23T13:28:11Z",
+        "id": 2096496,
+        "keywords": [
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-23T14:28:45Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
-        "summary": "6.85% six-speed-sm six-speed-spread-literal-es6 (Linux) regression on Wed November 11 2026"
+        "summary": "0.2 - 0.14% installer size + 1 more (Linux) regression on Tue November 17 2026"
+      },
+      {
+        "component": "Graphics: WebGPU",
+        "creation_time": "2026-11-23T15:35:36Z",
+        "id": 2096567,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-23T19:58:09Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "9.82 - 6.17% pdfpaint_main_hwa perf_images_scan_bilevel.pdf + 4 more (OSX, Windows) regression on Thu November 19 2026"
+      },
+      {
+        "component": "Graphics: Canvas2D",
+        "creation_time": "2026-11-23T16:12:00Z",
+        "id": 2096586,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression",
+          "talos-regression"
+        ],
+        "last_change_time": "2026-11-23T16:46:27Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "18.2 - 8.43% pdfpaint_main_hwa perf_transparency_groups.pdf + 3 more (Linux, OSX) regression on Thu November 19 2026"
       }
     ]
   },
@@ -16378,7 +16261,7 @@
         "creation_time": "2026-11-06T18:41:24Z",
         "id": 2090267,
         "keywords": [],
-        "last_change_time": "2026-11-16T06:29:52Z",
+        "last_change_time": "2026-11-23T06:29:38Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16440,7 +16323,7 @@
         "creation_time": "2026-11-11T15:31:18Z",
         "id": 2091759,
         "keywords": [],
-        "last_change_time": "2026-11-22T14:04:32Z",
+        "last_change_time": "2026-11-23T18:57:37Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "--",
@@ -16518,13 +16401,13 @@
         "summary": "setTimeout gets slower with each pending timer when delays are not increasing (Chrome: constant)"
       },
       {
-        "component": "Performance",
+        "component": "Audio/Video: Playback",
         "creation_time": "2026-11-13T04:07:12Z",
         "id": 2092413,
         "keywords": [
           "wayland"
         ],
-        "last_change_time": "2026-11-16T20:00:40Z",
+        "last_change_time": "2026-11-23T20:23:43Z",
         "op_sys": "Linux",
         "priority": "--",
         "severity": "--",
@@ -16542,6 +16425,18 @@
         "severity": "--",
         "status": "NEW",
         "summary": "app.meteo.pl - Performance issues with NVIDIA GPU"
+      },
+      {
+        "component": "Performance: General",
+        "creation_time": "2026-11-19T11:37:39Z",
+        "id": 2095054,
+        "keywords": [],
+        "last_change_time": "2026-11-23T16:07:40Z",
+        "op_sys": "Windows 10",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "www.ticketmaster.nl - Laggy when trying to navigate/zoom the seat map"
       },
       {
         "component": "Performance: General",
