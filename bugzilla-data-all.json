@@ -120,7 +120,7 @@
           "perf",
           "perf:responsiveness"
         ],
-        "last_change_time": "2026-11-23T15:28:37Z",
+        "last_change_time": "2026-11-24T16:56:47Z",
         "op_sys": "All",
         "priority": "P3",
         "severity": "S3",
@@ -132,7 +132,7 @@
         "creation_time": "2024-06-19T11:50:31Z",
         "id": 1903530,
         "keywords": [],
-        "last_change_time": "2026-08-13T22:17:37Z",
+        "last_change_time": "2026-11-24T16:12:57Z",
         "op_sys": "Unspecified",
         "priority": "P2",
         "severity": "S2",
@@ -277,6 +277,18 @@
         "summary": "AddToRecentDocs causes hangs due to main thread I/O"
       },
       {
+        "component": "XML",
+        "creation_time": "2024-10-01T10:22:36Z",
+        "id": 1921956,
+        "keywords": [],
+        "last_change_time": "2026-11-24T17:35:25Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "S3",
+        "status": "ASSIGNED",
+        "summary": "Loading big XML file makes Firefox and even the windows system unusable"
+      },
+      {
         "component": "JavaScript Engine: JIT",
         "creation_time": "2024-10-01T18:43:40Z",
         "id": 1922073,
@@ -394,24 +406,6 @@
         "severity": "S4",
         "status": "NEW",
         "summary": "Evaluate aggregating timers to reduce the number of times we wake up the CPU for serving them"
-      },
-      {
-        "component": "New Tab Page",
-        "creation_time": "2015-05-07T20:09:26Z",
-        "id": 1162698,
-        "keywords": [
-          "memory-footprint",
-          "memory-leak",
-          "perf",
-          "perf:responsiveness",
-          "top-memory-leak"
-        ],
-        "last_change_time": "2026-06-01T12:33:53Z",
-        "op_sys": "All",
-        "priority": "P3",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "Thumbnail generation should have a time limit"
       },
       {
         "component": "Session Restore",
@@ -3444,18 +3438,6 @@
         "summary": "economia.gov.br - Page takes very long to load"
       },
       {
-        "component": "XML",
-        "creation_time": "2024-10-01T10:22:36Z",
-        "id": 1921956,
-        "keywords": [],
-        "last_change_time": "2025-09-11T06:16:56Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "Loading big XML file makes Firefox and even the windows system unusable"
-      },
-      {
         "component": "Startup and Profile System",
         "creation_time": "2024-10-18T10:15:37Z",
         "id": 1925480,
@@ -4535,7 +4517,7 @@
           "perf",
           "perf:responsiveness"
         ],
-        "last_change_time": "2025-09-29T14:01:38Z",
+        "last_change_time": "2026-11-25T00:20:14Z",
         "op_sys": "All",
         "priority": "P3",
         "severity": "S3",
@@ -4556,20 +4538,6 @@
         "severity": "S3",
         "status": "NEW",
         "summary": "Compositing/present still hapens when the only changing parts are out of the viewport"
-      },
-      {
-        "component": "Graphics: Canvas2D",
-        "creation_time": "2012-06-03T03:18:54Z",
-        "id": 760888,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2024-04-05T11:37:58Z",
-        "op_sys": "All",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "IE10 Test Drive: ParticleAcceleration Canvas 2D demo is slow"
       },
       {
         "component": "PDF Viewer",
@@ -4868,7 +4836,7 @@
           "regression",
           "testcase"
         ],
-        "last_change_time": "2026-11-10T21:21:51Z",
+        "last_change_time": "2026-11-24T22:26:49Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -4903,20 +4871,6 @@
         "severity": "S3",
         "status": "NEW",
         "summary": "Running jasmine is slower than Safari and Chrome"
-      },
-      {
-        "component": "Graphics: Canvas2D",
-        "creation_time": "2016-06-07T13:45:20Z",
-        "id": 1278554,
-        "keywords": [
-          "perf"
-        ],
-        "last_change_time": "2022-11-08T00:01:53Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "CanvasRenderingContext2D::DrawImage takes lots of  time when scrolling Google Spreadsheet"
       },
       {
         "component": "JavaScript: GC",
@@ -8554,7 +8508,7 @@
         "keywords": [
           "perf:resource-use"
         ],
-        "last_change_time": "2022-10-11T23:46:42Z",
+        "last_change_time": "2026-11-24T01:59:07Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -13457,18 +13411,30 @@
         "summary": "The main thread blocks during worker creation, on Nightly for worker debugging"
       },
       {
-        "component": "Audio/Video: Playback",
+        "component": "Widget: Gtk",
         "creation_time": "2026-11-13T04:07:12Z",
         "id": 2092413,
         "keywords": [
           "wayland"
         ],
-        "last_change_time": "2026-11-23T20:23:43Z",
+        "last_change_time": "2026-11-24T23:33:07Z",
         "op_sys": "Linux",
+        "priority": "--",
+        "severity": "S3",
+        "status": "NEW",
+        "summary": "Firefox consistently, but periodically, stutters (at differing intervals), during media play-back, when utilising the KWin Wayland back-end, but not with KWin XWayland."
+      },
+      {
+        "component": "XML",
+        "creation_time": "2026-11-24T17:32:52Z",
+        "id": 2097312,
+        "keywords": [],
+        "last_change_time": "2026-11-24T17:38:59Z",
+        "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
-        "summary": "Firefox consistently, but periodically, stutters (at differing intervals), during media play-back, when utilising the KWin Wayland back-end, but not with KWin XWayland."
+        "summary": "Provide a responsive preview for large XML documents"
       }
     ]
   },
@@ -15210,7 +15176,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-23T11:48:51Z",
+        "last_change_time": "2026-11-24T14:01:52Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15243,7 +15209,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-23T17:04:25Z",
+        "last_change_time": "2026-11-24T21:03:55Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15363,6 +15329,22 @@
         "severity": "--",
         "status": "NEW",
         "summary": "18.2 - 8.43% pdfpaint_main_hwa perf_transparency_groups.pdf + 3 more (Linux, OSX) regression on Thu November 19 2026"
+      },
+      {
+        "component": "Raptor",
+        "creation_time": "2026-11-24T16:43:00Z",
+        "id": 2097281,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-24T16:44:10Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "59.08% jetstream3 cpuTime (Android) regression on Thu November 19 2026"
       }
     ]
   },
@@ -16323,7 +16305,7 @@
         "creation_time": "2026-11-11T15:31:18Z",
         "id": 2091759,
         "keywords": [],
-        "last_change_time": "2026-11-23T18:57:37Z",
+        "last_change_time": "2026-11-24T05:58:31Z",
         "op_sys": "Android",
         "priority": "--",
         "severity": "--",
@@ -16401,16 +16383,16 @@
         "summary": "setTimeout gets slower with each pending timer when delays are not increasing (Chrome: constant)"
       },
       {
-        "component": "Audio/Video: Playback",
+        "component": "Widget: Gtk",
         "creation_time": "2026-11-13T04:07:12Z",
         "id": 2092413,
         "keywords": [
           "wayland"
         ],
-        "last_change_time": "2026-11-23T20:23:43Z",
+        "last_change_time": "2026-11-24T23:33:07Z",
         "op_sys": "Linux",
         "priority": "--",
-        "severity": "--",
+        "severity": "S3",
         "status": "NEW",
         "summary": "Firefox consistently, but periodically, stutters (at differing intervals), during media play-back, when utilising the KWin Wayland back-end, but not with KWin XWayland."
       },
@@ -16451,6 +16433,18 @@
         "severity": "--",
         "status": "NEW",
         "summary": "Telemetry Alert for perf_largest_contentful_paint on 2026-09-30"
+      },
+      {
+        "component": "XML",
+        "creation_time": "2026-11-24T17:32:52Z",
+        "id": 2097312,
+        "keywords": [],
+        "last_change_time": "2026-11-24T17:38:59Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Provide a responsive preview for large XML documents"
       }
     ]
   },
