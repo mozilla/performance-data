@@ -1,0 +1,49 @@
+name: Download Speedometer Data
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'  # Runs every 12 hours.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: download-speedometer-data
+  cancel-in-progress: false
+
+jobs:
+  download-speedometer-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Download Speedometer3 data
+      run: node scripts/fetch-speedometer-data.mjs
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add speedometer-data.json.gz
+        if git diff --cached --quiet; then
+          echo "No Speedometer3 data changes"
+          exit 0
+        fi
+        git commit -m "Update Speedometer3 data cache"
+        for attempt in 1 2 3 4 5; do
+          if git pull --rebase && git push; then
+            exit 0
+          fi
+          sleep $((attempt * 15))
+        done
+        exit 1
