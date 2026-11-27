@@ -120,7 +120,7 @@
           "perf",
           "perf:responsiveness"
         ],
-        "last_change_time": "2026-11-24T16:56:47Z",
+        "last_change_time": "2026-11-26T06:26:34Z",
         "op_sys": "All",
         "priority": "P3",
         "severity": "S3",
@@ -299,18 +299,6 @@
         "severity": "S3",
         "status": "ASSIGNED",
         "summary": "js::jit::GenerateCode spends a lot of time in malloc lock contention"
-      },
-      {
-        "component": "JavaScript Engine",
-        "creation_time": "2025-12-01T16:45:51Z",
-        "id": 2003299,
-        "keywords": [],
-        "last_change_time": "2026-11-25T21:51:19Z",
-        "op_sys": "Unspecified",
-        "priority": "P3",
-        "severity": "S4",
-        "status": "ASSIGNED",
-        "summary": "toBase64 is very slow"
       },
       {
         "component": "Layout",
@@ -11792,6 +11780,18 @@
         "summary": "rathodmax.com - Scrolling is slow and laggy on Android"
       },
       {
+        "component": "XPCOM",
+        "creation_time": "2026-11-26T15:54:49Z",
+        "id": 2098185,
+        "keywords": [],
+        "last_change_time": "2026-11-26T20:05:37Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "Futex ConditionVariableImpl makes a wake-up syscall on every notify, even when nobody is waiting"
+      },
+      {
         "component": "JavaScript: GC",
         "creation_time": "2016-10-05T23:40:26Z",
         "id": 1308039,
@@ -13363,7 +13363,7 @@
           "memory-footprint",
           "perf"
         ],
-        "last_change_time": "2026-11-09T20:10:04Z",
+        "last_change_time": "2026-11-26T23:28:05Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -14948,7 +14948,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-09-21T12:11:36Z",
+        "last_change_time": "2026-11-26T15:33:49Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15013,7 +15013,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-20T08:05:54Z",
+        "last_change_time": "2026-11-26T08:04:50Z",
         "op_sys": "Unspecified",
         "priority": "P3",
         "severity": "S3",
@@ -15102,23 +15102,6 @@
         "summary": "0.18% installer size (Windows) regression on Fri November 6 2026"
       },
       {
-        "component": "PDF Viewer",
-        "creation_time": "2026-11-10T13:56:28Z",
-        "id": 2091402,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-23T20:06:37Z",
-        "op_sys": "Unspecified",
-        "priority": "P1",
-        "severity": "S3",
-        "status": "ASSIGNED",
-        "summary": "101.99 - 6.02% pdfpaint_main_hwa perf_text_standard14.pdf + 28 more (Linux, OSX, Windows) regression on Fri November 6 2026"
-      },
-      {
         "component": "Graphics: WebRender",
         "creation_time": "2026-11-14T05:58:05Z",
         "id": 2092830,
@@ -15144,28 +15127,12 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-25T08:05:43Z",
+        "last_change_time": "2026-11-26T13:39:03Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
         "status": "NEW",
         "summary": "87.15 - 86.01% tp5n nonmain_normal_fileio + 1 more (Windows) regression on Mon November 9 2026"
-      },
-      {
-        "component": "Memory Allocator",
-        "creation_time": "2026-11-16T13:20:39Z",
-        "id": 2093340,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-25T08:05:44Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "3.79 - 0.67% speedometer3 TodoMVC-jQuery/total + 21 more (Linux, Windows) regression on Sat November 14 2026"
       },
       {
         "component": "Graphics: WebRender",
@@ -15192,7 +15159,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-25T08:05:46Z",
+        "last_change_time": "2026-11-26T18:47:50Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15216,23 +15183,6 @@
         "summary": "8.64 - 4.37% jetstream3 WSL-Stdlib + 5 more (Windows) regression on Fri November 13 2026"
       },
       {
-        "component": "Memory Allocator",
-        "creation_time": "2026-11-17T12:47:06Z",
-        "id": 2094091,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-25T08:05:47Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "S3",
-        "status": "NEW",
-        "summary": "56.53 - 5.75% perf_reftest_singletons inline-style-cache-1.html + 4 more (Linux, Windows) regression on Sat November 14 2026"
-      },
-      {
         "component": "Messaging System",
         "creation_time": "2026-11-19T07:03:38Z",
         "id": 2094982,
@@ -15241,7 +15191,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-23T18:33:37Z",
+        "last_change_time": "2026-11-26T18:54:03Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15306,7 +15256,7 @@
           "regression",
           "talos-regression"
         ],
-        "last_change_time": "2026-11-25T18:39:02Z",
+        "last_change_time": "2026-11-26T23:56:10Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15322,7 +15272,7 @@
           "perf-alert",
           "regression"
         ],
-        "last_change_time": "2026-11-25T17:42:48Z",
+        "last_change_time": "2026-11-26T14:49:16Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -15379,22 +15329,6 @@
         "summary": "13.91 - 12.16% motionmark_webgl 3DGraphics-WebGL + 1 more (Windows) regression on Thu November 19 2026"
       },
       {
-        "component": "Memory Allocator",
-        "creation_time": "2026-11-25T11:58:08Z",
-        "id": 2097619,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-25T15:04:07Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "ASSIGNED",
-        "summary": "3.21 - 3.07% motionmark-htmlsuite-1-3 + 1 more (Windows) regression on Fri November 20 2026"
-      },
-      {
         "component": "Privacy: Anti-Tracking",
         "creation_time": "2026-11-25T12:43:38Z",
         "id": 2097640,
@@ -15409,23 +15343,6 @@
         "severity": "--",
         "status": "NEW",
         "summary": "19.06% vpl-vp9 estimatedFirstFrameLatency + 1 more (Linux) regression on Mon November 23 2026"
-      },
-      {
-        "component": "Memory Allocator",
-        "creation_time": "2026-11-25T13:10:03Z",
-        "id": 2097655,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression",
-          "talos-regression"
-        ],
-        "last_change_time": "2026-11-25T14:45:38Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "6.52 - 4.86% perf_reftest_singletons remove-children.html + 2 more (Linux, Windows) regression on Fri November 20 2026"
       },
       {
         "component": "Graphics: WebGPU",
@@ -15445,22 +15362,6 @@
         "summary": "14 - 6.07% pdfpaint perf_codecs_ccitt.pdf + 18 more (OSX, Windows) regression on Fri November 20 2026"
       },
       {
-        "component": "Networking",
-        "creation_time": "2026-11-25T13:20:43Z",
-        "id": 2097661,
-        "keywords": [
-          "perf",
-          "perf-alert",
-          "regression"
-        ],
-        "last_change_time": "2026-11-25T13:58:09Z",
-        "op_sys": "Unspecified",
-        "priority": "--",
-        "severity": "--",
-        "status": "NEW",
-        "summary": "61.93% media-capabilities decode-file-audio-mp3-cold (OSX) regression on Sat November 21 2026"
-      },
-      {
         "component": "PDF Viewer",
         "creation_time": "2026-11-25T15:45:48Z",
         "id": 2097727,
@@ -15476,6 +15377,151 @@
         "severity": "--",
         "status": "NEW",
         "summary": "36.84 - 6.07% pdfpaint perf_text_cid_truetype.pdf + 49 more (Linux, OSX, Windows) regression on Mon November 23 2026"
+      },
+      {
+        "component": "Performance",
+        "creation_time": "2026-11-26T09:06:22Z",
+        "id": 2098007,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-26T09:43:41Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "3.27% speedometer3 Charts-chartjs/total (Windows) regression on Thu November 19 2026"
+      },
+      {
+        "component": "Debugger",
+        "creation_time": "2026-11-26T10:35:41Z",
+        "id": 2098041,
+        "keywords": [
+          "devtools-perf-regression",
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-26T10:44:21Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "76.13 - 2.14% damp source-map.simple.DAMP + 28 more (Linux, OSX, Windows) regression on Tue November 24 2026"
+      },
+      {
+        "component": "Audio/Video",
+        "creation_time": "2026-11-26T12:20:17Z",
+        "id": 2098075,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-26T16:08:39Z",
+        "op_sys": "Unspecified",
+        "priority": "P3",
+        "severity": "S3",
+        "status": "NEW",
+        "summary": "72.68 - 46.73% ve-vp9-rt vp09.00.10.08 RGBX canvas realtime encode - frame-to-frame cv (key) + 1 more (OSX) regression on Fri November 20 2026"
+      },
+      {
+        "component": "UI Tests",
+        "creation_time": "2026-11-26T12:44:50Z",
+        "id": 2098080,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-26T13:44:27Z",
+        "op_sys": "Android",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "4.2% foreground-resource pss-crashhelper-start (Android) regression on Tue November 10 2026"
+      },
+      {
+        "component": "Web Painting",
+        "creation_time": "2026-11-26T12:48:49Z",
+        "id": 2098083,
+        "keywords": [
+          "devtools-perf-regression",
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-26T16:16:49Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "S3",
+        "status": "NEW",
+        "summary": "4.63% damp browser-toolbox.connect.DAMP (Linux) regression on Fri November 20 2026"
+      },
+      {
+        "component": "IPC",
+        "creation_time": "2026-11-26T12:52:07Z",
+        "id": 2098084,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-26T13:44:30Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "3.81 - 3.76% background-resource pss-rdd-start + 3 more (Android) regression on Mon November 23 2026"
+      },
+      {
+        "component": "Source Documentation",
+        "creation_time": "2026-11-26T13:07:15Z",
+        "id": 2098093,
+        "keywords": [
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-26T13:07:15Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "0.2 - 0.18% installer size + 1 more (OSX) regression on Tue November 17 2026"
+      },
+      {
+        "component": "Address Bar",
+        "creation_time": "2026-11-26T18:25:18Z",
+        "id": 2098248,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-27T00:05:48Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "40.79 - 7.41% youtube FirstVisualChange + 9 more (Windows) regression on Tue November 24 2026"
+      },
+      {
+        "component": "Graphics: WebRender",
+        "creation_time": "2026-11-26T18:26:44Z",
+        "id": 2098250,
+        "keywords": [
+          "perf",
+          "perf-alert",
+          "regression"
+        ],
+        "last_change_time": "2026-11-27T00:05:40Z",
+        "op_sys": "Unspecified",
+        "priority": "--",
+        "severity": "--",
+        "status": "NEW",
+        "summary": "14.25 - 4.59% google-slides LastVisualChange + 4 more (Linux, Windows) regression on Tue November 24 2026"
       }
     ]
   },
@@ -16207,7 +16253,7 @@
         "creation_time": "2026-10-08T18:24:59Z",
         "id": 2079867,
         "keywords": [],
-        "last_change_time": "2026-11-19T18:27:24Z",
+        "last_change_time": "2026-11-26T15:07:05Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16309,7 +16355,7 @@
           "memory-footprint",
           "perf"
         ],
-        "last_change_time": "2026-11-09T20:10:04Z",
+        "last_change_time": "2026-11-26T23:28:05Z",
         "op_sys": "Unspecified",
         "priority": "--",
         "severity": "--",
@@ -16570,7 +16616,7 @@
         "creation_time": "2026-11-25T15:22:17Z",
         "id": 2097713,
         "keywords": [],
-        "last_change_time": "2026-11-25T15:50:12Z",
+        "last_change_time": "2026-11-26T02:30:08Z",
         "op_sys": "Linux",
         "priority": "--",
         "severity": "--",
